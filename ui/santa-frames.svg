@@ -1,0 +1,2193 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="220"><svg x="0" y="0" width="330" height="110" viewBox="0 0 1320 440">
+  <title>Le Père Noël, son traîneau et ses rennes</title>
+  <defs>
+    <!-- Dégradés -->
+    <linearGradient id="f0-fur" gradientUnits="userSpaceOnUse" x1="0" y1="-50" x2="0" y2="36">
+      <stop offset="0" stop-color="#5e3718"/>
+      <stop offset="0.45" stop-color="#8c5a2b"/>
+      <stop offset="0.8" stop-color="#b58a58"/>
+      <stop offset="1" stop-color="#e2d0b0"/>
+    </linearGradient>
+    <linearGradient id="f0-headGrad" gradientUnits="userSpaceOnUse" x1="0" y1="-108" x2="0" y2="-54">
+      <stop offset="0" stop-color="#5e3718"/>
+      <stop offset="1" stop-color="#9a6a38"/>
+    </linearGradient>
+    <linearGradient id="f0-redBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d42a38"/>
+      <stop offset="0.55" stop-color="#a51826"/>
+      <stop offset="1" stop-color="#5e0c16"/>
+    </linearGradient>
+    <linearGradient id="f0-suit" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e84545"/>
+      <stop offset="0.55" stop-color="#bd1f2b"/>
+      <stop offset="1" stop-color="#7d1019"/>
+    </linearGradient>
+    <linearGradient id="f0-goldH" gradientUnits="userSpaceOnUse" x1="0" y1="-40" x2="0" y2="140">
+      <stop offset="0" stop-color="#fff0a8"/>
+      <stop offset="0.35" stop-color="#e8b830"/>
+      <stop offset="0.7" stop-color="#c18a1c"/>
+      <stop offset="1" stop-color="#f3d36a"/>
+    </linearGradient>
+    <radialGradient id="f0-goldBall" cx="0.35" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#fff6c0"/>
+      <stop offset="0.5" stop-color="#e3ae2a"/>
+      <stop offset="1" stop-color="#8a5e10"/>
+    </radialGradient>
+    <radialGradient id="f0-skin" cx="0.4" cy="0.35" r="0.8">
+      <stop offset="0" stop-color="#ffdcc2"/>
+      <stop offset="1" stop-color="#e0a07e"/>
+    </radialGradient>
+    <linearGradient id="f0-beard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#d3d3dc"/>
+    </linearGradient>
+    <radialGradient id="f0-fluff" cx="0.4" cy="0.35" r="0.75">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#cfcfd8"/>
+    </radialGradient>
+    <linearGradient id="f0-sack" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d1a674"/>
+      <stop offset="1" stop-color="#7a5230"/>
+    </linearGradient>
+    <radialGradient id="f0-noseGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ff3030" stop-opacity="0.95"/>
+      <stop offset="0.45" stop-color="#ff3030" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#ff3030" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Filtres -->
+    <filter id="f0-soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <filter id="f0-softSm" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.4"/>
+    </filter>
+    <filter id="f0-furTex" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="4" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.12  0 0 0 0 0.06  0 0 0 0 0.02  0 0 0 0.9 -0.35" result="specks"/>
+      <feComposite in="specks" in2="SourceAlpha" operator="in" result="d"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="d"/></feMerge>
+    </filter>
+
+    <!-- Bois du renne -->
+    <g id="f0-antler" fill="none" stroke-linecap="round">
+      <g stroke="#b58c58">
+        <path d="M102,-104 C98,-130 84,-152 60,-166" stroke-width="7"/>
+        <path d="M94,-124 C102,-138 112,-146 124,-148" stroke-width="5"/>
+        <path d="M82,-146 C84,-160 80,-174 72,-184" stroke-width="5"/>
+        <path d="M70,-156 C60,-152 48,-154 40,-148" stroke-width="4.5"/>
+        <path d="M104,-108 C116,-118 126,-120 134,-116" stroke-width="5.5"/>
+      </g>
+      <g stroke="#ecd7ae" opacity="0.85">
+        <path d="M101,-106 C97,-130 83,-151 60,-165" stroke-width="2.5"/>
+        <path d="M94,-125 C102,-139 112,-147 124,-149" stroke-width="1.8"/>
+        <path d="M82,-147 C84,-161 80,-175 72,-185" stroke-width="1.8"/>
+        <path d="M103,-109 C115,-119 125,-121 133,-117" stroke-width="2"/>
+      </g>
+    </g>
+
+    <!-- Renne réaliste, tourné vers la droite -->
+    <g id="f0-deer">
+      <!-- pattes lointaines -->
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(-7.00 40 20)"><path d="M40,20 L64,46" stroke="#4a2c12" stroke-width="14"/><path d="M64,46 L84,60" stroke="#4a2c12" stroke-width="8"/><path d="M84,60 L92,67" stroke="#1d1410" stroke-width="10"/></g><g transform="rotate(7.00 -40 14)"><path d="M-40,14 L-60,44" stroke="#4a2c12" stroke-width="18"/><path d="M-60,44 L-68,74" stroke="#4a2c12" stroke-width="8"/><path d="M-68,74 L-68,84" stroke="#1d1410" stroke-width="10"/></g></g>
+
+      <!-- bois -->
+      <use href="#f0-antler" transform="translate(16 -5) scale(0.93)" opacity="0.7"/>
+      <use href="#f0-antler"/>
+
+      <!-- cou -->
+      <path d="M50,-40 C64,-62 76,-84 90,-100 L114,-82 C108,-60 102,-36 92,-12 C84,-2 70,4 58,12 Z" fill="url(#f0-fur)" filter="url(#f0-furTex)"/>
+      <!-- corps -->
+      <path d="M-72,-10 C-74,-36 -40,-46 0,-44 C36,-44 62,-40 76,-24 C84,-8 78,18 58,28 C30,38 -10,34 -40,30 C-64,26 -71,10 -72,-10 Z" fill="url(#f0-fur)" filter="url(#f0-furTex)"/>
+      <!-- crinière blanche -->
+      <path d="M88,-12 C98,-34 106,-58 112,-80 C120,-70 124,-46 116,-22 C110,-8 98,2 84,10 Z" fill="#f0e8d8" opacity="0.92" filter="url(#f0-softSm)"/>
+      <!-- volumes : lumière et ombres -->
+      <path d="M-60,-32 C-30,-44 20,-44 62,-34" fill="none" stroke="#c28c52" stroke-width="6" opacity="0.5" filter="url(#f0-soft)"/>
+      <path d="M40,-30 C52,-10 50,10 38,24" fill="none" stroke="#3d2210" stroke-width="5" opacity="0.4" filter="url(#f0-soft)"/>
+      <path d="M-50,-28 C-64,-6 -60,14 -44,28" fill="none" stroke="#3d2210" stroke-width="6" opacity="0.4" filter="url(#f0-soft)"/>
+      <!-- queue -->
+      <path d="M-70,-26 C-82,-34 -92,-30 -94,-20 C-88,-18 -78,-20 -70,-16 Z" fill="#ecdfc8"/>
+
+      <!-- oreille arrière -->
+      <path d="M92,-100 C80,-118 66,-122 58,-114 C66,-108 80,-102 92,-94 Z" fill="#5e3718"/>
+      <path d="M86,-102 C78,-112 70,-114 66,-112 C72,-108 80,-104 88,-98 Z" fill="#d49a72" opacity="0.7"/>
+      <!-- tête -->
+      <path d="M88,-98 C100,-108 120,-102 134,-86 C144,-76 150,-68 148,-60 C144,-54 134,-56 126,-60 C112,-64 98,-70 90,-80 Z" fill="url(#f0-headGrad)" filter="url(#f0-furTex)"/>
+      <ellipse cx="139" cy="-62" rx="12" ry="7" fill="#cfa97f" transform="rotate(-8 139 -62)"/>
+      <path d="M130,-58 C138,-56 146,-57 150,-60" fill="none" stroke="#2a1d18" stroke-width="1.5" stroke-linecap="round"/>
+      <circle cx="148" cy="-62" r="5.5" fill="#241914"/>
+      <circle cx="146.5" cy="-64" r="1.6" fill="#6b5a50"/>
+      <!-- oeil -->
+      <ellipse cx="107" cy="-89" rx="4.6" ry="3.6" fill="#1a110c"/>
+      <circle cx="108.5" cy="-90.4" r="1.3" fill="#ffffff"/>
+      <path d="M100,-93 C105,-97 112,-96 115,-92" fill="none" stroke="#3d2210" stroke-width="1.6" stroke-linecap="round"/>
+
+      <!-- pattes proches -->
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(7.00 50 16)"><path d="M50,16 L88,30" stroke="#764a22" stroke-width="15"/><path d="M88,30 L120,32" stroke="#764a22" stroke-width="9"/><path d="M120,32 L132,34" stroke="#1d1410" stroke-width="10"/></g><g transform="rotate(-7.00 -52 10)"><path d="M-52,10 L-82,34" stroke="#7a4c24" stroke-width="22"/><path d="M-82,34 L-114,44" stroke="#7a4c24" stroke-width="10"/><path d="M-114,44 L-125,48" stroke="#1d1410" stroke-width="11"/></g></g>
+
+      <!-- harnais -->
+      <path d="M8,-42 C14,-12 6,16 -2,34" fill="none" stroke="#7d1620" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="9" cy="-14" r="4.5" fill="url(#f0-goldBall)"/>
+      <path d="M70,-58 C84,-52 98,-46 108,-40" fill="none" stroke="#8c1b24" stroke-width="9" stroke-linecap="round"/>
+      <path d="M72,-61 C85,-55 98,-49 106,-44" fill="none" stroke="#e8c15a" stroke-width="1.2" stroke-dasharray="3 3"/>
+      <circle cx="108" cy="-35" r="7" fill="url(#f0-goldBall)"/>
+      <path d="M102,-35 L114,-35" stroke="#7a5410" stroke-width="1.2"/>
+    </g>
+  </defs>
+
+  <!-- ===== Traits d'attelage ===== -->
+  <g fill="none" stroke="#4a2d16" stroke-width="3" stroke-linecap="round">
+    <path d="M444,248 C484,258 520,278 552,298"/>
+    <path d="M698,290 C735,292 770,288 805,282"/>
+    <path d="M953,272 C990,272 1025,268 1060,264"/>
+  </g>
+
+  <!-- ===== Rennes ===== -->
+  <use href="#f0-deer" transform="translate(620 310) rotate(-3)"/>
+  <use href="#f0-deer" transform="translate(875 292) rotate(-4) scale(0.98)"/>
+  <g transform="translate(1130 274) rotate(-5) scale(0.96)">
+    <use href="#f0-deer"/>
+    <!-- Rudolph -->
+    <circle cx="148" cy="-62" r="32.80" opacity="0.72" fill="url(#f0-noseGlow)"/>
+    <circle cx="148" cy="-62" r="6.5" fill="#ff2323"/>
+    <circle cx="146" cy="-64.5" r="2" fill="#ffc2c2"/>
+  </g>
+
+  <!-- ===== Traîneau et Père Noël ===== -->
+  <g transform="translate(90 230)">
+    <!-- sac de cadeaux -->
+    <path d="M10,14 C-6,-30 20,-70 66,-72 C108,-70 122,-30 108,14 Z" fill="url(#f0-sack)"/>
+    <path d="M30,-20 C34,-40 44,-56 56,-64" fill="none" stroke="#5c3a1e" stroke-width="3" opacity="0.5" filter="url(#f0-softSm)"/>
+    <path d="M52,-70 C54,-88 80,-90 82,-70" fill="url(#f0-sack)" stroke="#5c3a1e" stroke-width="1.5"/>
+    <path d="M48,-68 C60,-62 74,-62 86,-68" fill="none" stroke="#8c1b24" stroke-width="6" stroke-linecap="round"/>
+    <!-- cadeaux qui dépassent du sac -->
+    <g transform="rotate(-12 43 -81)">
+      <rect x="28" y="-96" width="30" height="30" fill="#1f7a4d"/>
+      <rect x="40" y="-96" width="6" height="30" fill="#e8b830"/>
+      <rect x="28" y="-84" width="30" height="6" fill="#e8b830"/>
+    </g>
+    <g transform="rotate(10 87 -98)">
+      <rect x="74" y="-110" width="26" height="26" fill="#2a5db0"/>
+      <rect x="84" y="-110" width="6" height="26" fill="#ffffff"/>
+      <rect x="74" y="-100" width="26" height="5" fill="#ffffff"/>
+    </g>
+
+    <!-- cadeaux à l'avant -->
+    <rect x="222" y="-6" width="34" height="26" fill="#1f7a4d"/>
+    <rect x="234" y="-6" width="6" height="26" fill="#e8b830"/>
+    <rect x="222" y="2" width="34" height="5" fill="#e8b830"/>
+    <rect x="258" y="0" width="30" height="20" fill="#2a5db0"/>
+    <rect x="269" y="0" width="6" height="20" fill="#ffffff"/>
+
+    <!-- Père Noël : manteau -->
+    <path d="M92,14 C86,-30 104,-62 140,-70 C180,-76 206,-52 208,-10 L210,14 Z" fill="url(#f0-suit)"/>
+    <path d="M118,-42 C124,-22 122,0 116,14" fill="none" stroke="#6a0d16" stroke-width="3" opacity="0.5" filter="url(#f0-softSm)"/>
+    <path d="M172,-50 C180,-30 184,-10 182,12" fill="none" stroke="#6a0d16" stroke-width="3" opacity="0.45" filter="url(#f0-softSm)"/>
+    <path d="M110,-56 C130,-70 160,-72 184,-60" fill="none" stroke="#ff8a8a" stroke-width="3" opacity="0.35" filter="url(#f0-softSm)"/>
+    <!-- fourrure du col -->
+    <ellipse cx="152" cy="-62" rx="34" ry="10" fill="url(#f0-fluff)"/>
+    <!-- ceinture -->
+    <path d="M92,-6 C130,0 180,0 209,-8" fill="none" stroke="#17120f" stroke-width="14"/>
+    <path d="M94,-11 C130,-5 180,-5 207,-13" fill="none" stroke="#4a4038" stroke-width="2" opacity="0.7"/>
+    <rect x="140" y="-18" width="22" height="18" rx="3" fill="url(#f0-goldBall)"/>
+    <rect x="146" y="-13" width="10" height="8" rx="2" fill="#17120f"/>
+
+    <!-- bras vers les rênes -->
+    <path d="M186,-50 C204,-42 222,-34 242,-28" fill="none" stroke="#a51826" stroke-width="21" stroke-linecap="round"/>
+    <path d="M186,-56 C204,-48 222,-40 240,-34" fill="none" stroke="#e84545" stroke-width="5" stroke-linecap="round" opacity="0.5" filter="url(#f0-softSm)"/>
+    <ellipse cx="240" cy="-28" rx="8" ry="12" fill="url(#f0-fluff)" transform="rotate(-18 240 -28)"/>
+    <ellipse cx="256" cy="-26" rx="10" ry="9" fill="#17120f"/>
+    <ellipse cx="253" cy="-29" rx="4" ry="2.5" fill="#5a5048" opacity="0.7"/>
+
+    <!-- tête -->
+    <circle cx="152" cy="-92" r="26" fill="url(#f0-skin)"/>
+    <circle cx="127" cy="-92" r="5" fill="#e0a07e"/>
+    <circle cx="177" cy="-92" r="5" fill="#d99777"/>
+    <!-- joues -->
+    <circle cx="138" cy="-84" r="8" fill="#e8806f" opacity="0.45" filter="url(#f0-softSm)"/>
+    <circle cx="168" cy="-84" r="8" fill="#e8806f" opacity="0.45" filter="url(#f0-softSm)"/>
+    <!-- barbe -->
+    <path d="M126,-94 C119,-60 127,-30 154,-22 C181,-30 189,-60 181,-94 C173,-78 165,-74 154,-76 C143,-74 135,-78 126,-94 Z" fill="url(#f0-beard)"/>
+    <g fill="none" stroke="#c4c4d0" stroke-width="1.4" stroke-linecap="round">
+      <path d="M134,-72 C134,-56 140,-42 150,-32"/>
+      <path d="M144,-66 C144,-52 148,-40 154,-30"/>
+      <path d="M164,-66 C164,-52 160,-40 154,-30"/>
+      <path d="M174,-72 C174,-56 168,-42 158,-32"/>
+      <path d="M128,-80 C126,-62 130,-48 138,-38"/>
+      <path d="M180,-80 C182,-62 178,-48 170,-38"/>
+    </g>
+    <!-- moustache -->
+    <path d="M154,-77 C139,-86 126,-79 122,-67 C135,-65 146,-68 154,-72 Z" fill="#ffffff" stroke="#d2d2dc" stroke-width="1"/>
+    <path d="M154,-77 C169,-86 182,-79 186,-67 C173,-65 162,-68 154,-72 Z" fill="#ffffff" stroke="#d2d2dc" stroke-width="1"/>
+    <!-- bouche -->
+    <path d="M147,-63 C151,-59 157,-59 161,-63" fill="none" stroke="#9c4a3e" stroke-width="2" stroke-linecap="round"/>
+    <!-- nez -->
+    <ellipse cx="154" cy="-86" rx="6.5" ry="5.5" fill="#e99a86"/>
+    <ellipse cx="152.5" cy="-88" rx="2.2" ry="1.4" fill="#f7c4b4" opacity="0.8"/>
+    <!-- yeux -->
+    <ellipse cx="143" cy="-97" rx="3" ry="3.4" fill="#1d2b44"/>
+    <ellipse cx="165" cy="-97" rx="3" ry="3.4" fill="#1d2b44"/>
+    <circle cx="144" cy="-98.3" r="1" fill="#ffffff"/>
+    <circle cx="166" cy="-98.3" r="1" fill="#ffffff"/>
+    <!-- sourcils -->
+    <path d="M134,-103 C139,-109 147,-108 150,-103" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+    <path d="M158,-103 C161,-108 169,-109 174,-103" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- bonnet (pointe emportée par le vent) -->
+    <path d="M180,-106 C188,-146 150,-170 112,-152 C88,-140 72,-116 62,-90 C76,-98 88,-110 102,-112 C114,-114 124,-110 124,-106 Z" fill="url(#f0-suit)"/>
+    <path d="M118,-148 C140,-162 168,-160 182,-138" fill="none" stroke="#ff9a9a" stroke-width="4" opacity="0.35" filter="url(#f0-softSm)"/>
+    <path d="M110,-124 C96,-122 82,-112 72,-98" fill="none" stroke="#6a0d16" stroke-width="3" opacity="0.4" filter="url(#f0-softSm)"/>
+    <ellipse cx="152" cy="-105" rx="35" ry="10" fill="url(#f0-fluff)"/>
+    <g fill="url(#f0-fluff)">
+      <circle cx="124" cy="-104" r="7"/><circle cx="136" cy="-98" r="7"/>
+      <circle cx="152" cy="-96" r="7.5"/><circle cx="168" cy="-98" r="7"/>
+      <circle cx="180" cy="-104" r="7"/>
+    </g>
+    <circle cx="60" cy="-86" r="12" fill="url(#f0-fluff)"/>
+
+    <!-- caisse du traîneau -->
+    <path d="M-18,-34 C-34,0 -24,50 10,78 C45,104 130,108 205,104 C285,100 335,76 354,16 C358,2 354,-6 346,-14 C336,6 320,14 300,14 L30,14 C6,14 -10,-8 -18,-34 Z" fill="url(#f0-redBody)"/>
+    <!-- reflets laqués -->
+    <path d="M6,56 C60,92 150,96 214,92" fill="none" stroke="#ff7b7b" stroke-width="6" opacity="0.28" filter="url(#f0-soft)"/>
+    <path d="M40,26 L296,26" fill="none" stroke="#ff7b7b" stroke-width="4" opacity="0.25" filter="url(#f0-softSm)"/>
+    <path d="M40,100 C120,108 250,104 330,60" fill="none" stroke="#2c0408" stroke-width="8" opacity="0.35" filter="url(#f0-soft)"/>
+    <!-- motifs dorés -->
+    <path d="M50,56 C80,36 124,36 146,56 C168,76 214,76 244,56 C262,44 282,44 300,52" fill="none" stroke="url(#f0-goldH)" stroke-width="3" stroke-linecap="round"/>
+    <g fill="url(#f0-goldBall)">
+      <circle cx="50" cy="56" r="4"/><circle cx="146" cy="56" r="4"/><circle cx="244" cy="56" r="4"/><circle cx="300" cy="52" r="3.5"/>
+    </g>
+    <!-- rebord doré -->
+    <path d="M-18,-34 C-10,-8 6,14 30,14 L300,14 C320,14 336,6 346,-14" fill="none" stroke="url(#f0-goldH)" stroke-width="8" stroke-linecap="round"/>
+    <path d="M-16,-32 C-8,-8 8,12 30,12 L300,12 C320,12 334,4 344,-14" fill="none" stroke="#fff6c0" stroke-width="1.6" stroke-linecap="round" opacity="0.7"/>
+    <circle cx="-18" cy="-37" r="6" fill="url(#f0-goldBall)"/>
+    <circle cx="346" cy="-17" r="6" fill="url(#f0-goldBall)"/>
+    <!-- patins -->
+    <g fill="none" stroke="url(#f0-goldH)" stroke-linecap="round">
+      <path d="M-50,134 L330,134 C370,134 380,112 366,92" stroke-width="9"/>
+      <path d="M-50,134 C-70,134 -70,112 -58,104" stroke-width="9"/>
+      <path d="M50,98 L44,134 M270,96 L276,134" stroke-width="7"/>
+    </g>
+    <path d="M-44,131 L328,131" fill="none" stroke="#fff6c0" stroke-width="1.6" opacity="0.7" stroke-linecap="round"/>
+  </g>
+
+  <!-- Rênes -->
+  <path d="M352,204 C480,196 640,236 726,268" fill="none" stroke="#2b1a0e" stroke-width="2.5" stroke-linecap="round"/>
+</svg><svg x="330" y="0" width="330" height="110" viewBox="0 0 1320 440">
+  <title>Le Père Noël, son traîneau et ses rennes</title>
+  <defs>
+    <!-- Dégradés -->
+    <linearGradient id="f1-fur" gradientUnits="userSpaceOnUse" x1="0" y1="-50" x2="0" y2="36">
+      <stop offset="0" stop-color="#5e3718"/>
+      <stop offset="0.45" stop-color="#8c5a2b"/>
+      <stop offset="0.8" stop-color="#b58a58"/>
+      <stop offset="1" stop-color="#e2d0b0"/>
+    </linearGradient>
+    <linearGradient id="f1-headGrad" gradientUnits="userSpaceOnUse" x1="0" y1="-108" x2="0" y2="-54">
+      <stop offset="0" stop-color="#5e3718"/>
+      <stop offset="1" stop-color="#9a6a38"/>
+    </linearGradient>
+    <linearGradient id="f1-redBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d42a38"/>
+      <stop offset="0.55" stop-color="#a51826"/>
+      <stop offset="1" stop-color="#5e0c16"/>
+    </linearGradient>
+    <linearGradient id="f1-suit" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e84545"/>
+      <stop offset="0.55" stop-color="#bd1f2b"/>
+      <stop offset="1" stop-color="#7d1019"/>
+    </linearGradient>
+    <linearGradient id="f1-goldH" gradientUnits="userSpaceOnUse" x1="0" y1="-40" x2="0" y2="140">
+      <stop offset="0" stop-color="#fff0a8"/>
+      <stop offset="0.35" stop-color="#e8b830"/>
+      <stop offset="0.7" stop-color="#c18a1c"/>
+      <stop offset="1" stop-color="#f3d36a"/>
+    </linearGradient>
+    <radialGradient id="f1-goldBall" cx="0.35" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#fff6c0"/>
+      <stop offset="0.5" stop-color="#e3ae2a"/>
+      <stop offset="1" stop-color="#8a5e10"/>
+    </radialGradient>
+    <radialGradient id="f1-skin" cx="0.4" cy="0.35" r="0.8">
+      <stop offset="0" stop-color="#ffdcc2"/>
+      <stop offset="1" stop-color="#e0a07e"/>
+    </radialGradient>
+    <linearGradient id="f1-beard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#d3d3dc"/>
+    </linearGradient>
+    <radialGradient id="f1-fluff" cx="0.4" cy="0.35" r="0.75">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#cfcfd8"/>
+    </radialGradient>
+    <linearGradient id="f1-sack" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d1a674"/>
+      <stop offset="1" stop-color="#7a5230"/>
+    </linearGradient>
+    <radialGradient id="f1-noseGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ff3030" stop-opacity="0.95"/>
+      <stop offset="0.45" stop-color="#ff3030" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#ff3030" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Filtres -->
+    <filter id="f1-soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <filter id="f1-softSm" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.4"/>
+    </filter>
+    <filter id="f1-furTex" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="4" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.12  0 0 0 0 0.06  0 0 0 0 0.02  0 0 0 0.9 -0.35" result="specks"/>
+      <feComposite in="specks" in2="SourceAlpha" operator="in" result="d"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="d"/></feMerge>
+    </filter>
+
+    <!-- Bois du renne -->
+    <g id="f1-antler" fill="none" stroke-linecap="round">
+      <g stroke="#b58c58">
+        <path d="M102,-104 C98,-130 84,-152 60,-166" stroke-width="7"/>
+        <path d="M94,-124 C102,-138 112,-146 124,-148" stroke-width="5"/>
+        <path d="M82,-146 C84,-160 80,-174 72,-184" stroke-width="5"/>
+        <path d="M70,-156 C60,-152 48,-154 40,-148" stroke-width="4.5"/>
+        <path d="M104,-108 C116,-118 126,-120 134,-116" stroke-width="5.5"/>
+      </g>
+      <g stroke="#ecd7ae" opacity="0.85">
+        <path d="M101,-106 C97,-130 83,-151 60,-165" stroke-width="2.5"/>
+        <path d="M94,-125 C102,-139 112,-147 124,-149" stroke-width="1.8"/>
+        <path d="M82,-147 C84,-161 80,-175 72,-185" stroke-width="1.8"/>
+        <path d="M103,-109 C115,-119 125,-121 133,-117" stroke-width="2"/>
+      </g>
+    </g>
+
+    <!-- Renne réaliste, tourné vers la droite -->
+    <g id="f1-deer">
+      <!-- pattes lointaines -->
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(-18.38 40 20)"><path d="M40,20 L64,46" stroke="#4a2c12" stroke-width="14"/><path d="M64,46 L84,60" stroke="#4a2c12" stroke-width="8"/><path d="M84,60 L92,67" stroke="#1d1410" stroke-width="10"/></g><g transform="rotate(18.38 -40 14)"><path d="M-40,14 L-60,44" stroke="#4a2c12" stroke-width="18"/><path d="M-60,44 L-68,74" stroke="#4a2c12" stroke-width="8"/><path d="M-68,74 L-68,84" stroke="#1d1410" stroke-width="10"/></g></g>
+
+      <!-- bois -->
+      <use href="#f1-antler" transform="translate(16 -5) scale(0.93)" opacity="0.7"/>
+      <use href="#f1-antler"/>
+
+      <!-- cou -->
+      <path d="M50,-40 C64,-62 76,-84 90,-100 L114,-82 C108,-60 102,-36 92,-12 C84,-2 70,4 58,12 Z" fill="url(#f1-fur)" filter="url(#f1-furTex)"/>
+      <!-- corps -->
+      <path d="M-72,-10 C-74,-36 -40,-46 0,-44 C36,-44 62,-40 76,-24 C84,-8 78,18 58,28 C30,38 -10,34 -40,30 C-64,26 -71,10 -72,-10 Z" fill="url(#f1-fur)" filter="url(#f1-furTex)"/>
+      <!-- crinière blanche -->
+      <path d="M88,-12 C98,-34 106,-58 112,-80 C120,-70 124,-46 116,-22 C110,-8 98,2 84,10 Z" fill="#f0e8d8" opacity="0.92" filter="url(#f1-softSm)"/>
+      <!-- volumes : lumière et ombres -->
+      <path d="M-60,-32 C-30,-44 20,-44 62,-34" fill="none" stroke="#c28c52" stroke-width="6" opacity="0.5" filter="url(#f1-soft)"/>
+      <path d="M40,-30 C52,-10 50,10 38,24" fill="none" stroke="#3d2210" stroke-width="5" opacity="0.4" filter="url(#f1-soft)"/>
+      <path d="M-50,-28 C-64,-6 -60,14 -44,28" fill="none" stroke="#3d2210" stroke-width="6" opacity="0.4" filter="url(#f1-soft)"/>
+      <!-- queue -->
+      <path d="M-70,-26 C-82,-34 -92,-30 -94,-20 C-88,-18 -78,-20 -70,-16 Z" fill="#ecdfc8"/>
+
+      <!-- oreille arrière -->
+      <path d="M92,-100 C80,-118 66,-122 58,-114 C66,-108 80,-102 92,-94 Z" fill="#5e3718"/>
+      <path d="M86,-102 C78,-112 70,-114 66,-112 C72,-108 80,-104 88,-98 Z" fill="#d49a72" opacity="0.7"/>
+      <!-- tête -->
+      <path d="M88,-98 C100,-108 120,-102 134,-86 C144,-76 150,-68 148,-60 C144,-54 134,-56 126,-60 C112,-64 98,-70 90,-80 Z" fill="url(#f1-headGrad)" filter="url(#f1-furTex)"/>
+      <ellipse cx="139" cy="-62" rx="12" ry="7" fill="#cfa97f" transform="rotate(-8 139 -62)"/>
+      <path d="M130,-58 C138,-56 146,-57 150,-60" fill="none" stroke="#2a1d18" stroke-width="1.5" stroke-linecap="round"/>
+      <circle cx="148" cy="-62" r="5.5" fill="#241914"/>
+      <circle cx="146.5" cy="-64" r="1.6" fill="#6b5a50"/>
+      <!-- oeil -->
+      <ellipse cx="107" cy="-89" rx="4.6" ry="3.6" fill="#1a110c"/>
+      <circle cx="108.5" cy="-90.4" r="1.3" fill="#ffffff"/>
+      <path d="M100,-93 C105,-97 112,-96 115,-92" fill="none" stroke="#3d2210" stroke-width="1.6" stroke-linecap="round"/>
+
+      <!-- pattes proches -->
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(18.38 50 16)"><path d="M50,16 L88,30" stroke="#764a22" stroke-width="15"/><path d="M88,30 L120,32" stroke="#764a22" stroke-width="9"/><path d="M120,32 L132,34" stroke="#1d1410" stroke-width="10"/></g><g transform="rotate(-18.38 -52 10)"><path d="M-52,10 L-82,34" stroke="#7a4c24" stroke-width="22"/><path d="M-82,34 L-114,44" stroke="#7a4c24" stroke-width="10"/><path d="M-114,44 L-125,48" stroke="#1d1410" stroke-width="11"/></g></g>
+
+      <!-- harnais -->
+      <path d="M8,-42 C14,-12 6,16 -2,34" fill="none" stroke="#7d1620" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="9" cy="-14" r="4.5" fill="url(#f1-goldBall)"/>
+      <path d="M70,-58 C84,-52 98,-46 108,-40" fill="none" stroke="#8c1b24" stroke-width="9" stroke-linecap="round"/>
+      <path d="M72,-61 C85,-55 98,-49 106,-44" fill="none" stroke="#e8c15a" stroke-width="1.2" stroke-dasharray="3 3"/>
+      <circle cx="108" cy="-35" r="7" fill="url(#f1-goldBall)"/>
+      <path d="M102,-35 L114,-35" stroke="#7a5410" stroke-width="1.2"/>
+    </g>
+  </defs>
+
+  <!-- ===== Traits d'attelage ===== -->
+  <g fill="none" stroke="#4a2d16" stroke-width="3" stroke-linecap="round">
+    <path d="M444,248 C484,258 520,278 552,298"/>
+    <path d="M698,290 C735,292 770,288 805,282"/>
+    <path d="M953,272 C990,272 1025,268 1060,264"/>
+  </g>
+
+  <!-- ===== Rennes ===== -->
+  <use href="#f1-deer" transform="translate(620 310) rotate(-3)"/>
+  <use href="#f1-deer" transform="translate(875 292) rotate(-4) scale(0.98)"/>
+  <g transform="translate(1130 274) rotate(-5) scale(0.96)">
+    <use href="#f1-deer"/>
+    <!-- Rudolph -->
+    <circle cx="148" cy="-62" r="35.35" opacity="0.89" fill="url(#f1-noseGlow)"/>
+    <circle cx="148" cy="-62" r="6.5" fill="#ff2323"/>
+    <circle cx="146" cy="-64.5" r="2" fill="#ffc2c2"/>
+  </g>
+
+  <!-- ===== Traîneau et Père Noël ===== -->
+  <g transform="translate(90 230)">
+    <!-- sac de cadeaux -->
+    <path d="M10,14 C-6,-30 20,-70 66,-72 C108,-70 122,-30 108,14 Z" fill="url(#f1-sack)"/>
+    <path d="M30,-20 C34,-40 44,-56 56,-64" fill="none" stroke="#5c3a1e" stroke-width="3" opacity="0.5" filter="url(#f1-softSm)"/>
+    <path d="M52,-70 C54,-88 80,-90 82,-70" fill="url(#f1-sack)" stroke="#5c3a1e" stroke-width="1.5"/>
+    <path d="M48,-68 C60,-62 74,-62 86,-68" fill="none" stroke="#8c1b24" stroke-width="6" stroke-linecap="round"/>
+    <!-- cadeaux qui dépassent du sac -->
+    <g transform="rotate(-12 43 -81)">
+      <rect x="28" y="-96" width="30" height="30" fill="#1f7a4d"/>
+      <rect x="40" y="-96" width="6" height="30" fill="#e8b830"/>
+      <rect x="28" y="-84" width="30" height="6" fill="#e8b830"/>
+    </g>
+    <g transform="rotate(10 87 -98)">
+      <rect x="74" y="-110" width="26" height="26" fill="#2a5db0"/>
+      <rect x="84" y="-110" width="6" height="26" fill="#ffffff"/>
+      <rect x="74" y="-100" width="26" height="5" fill="#ffffff"/>
+    </g>
+
+    <!-- cadeaux à l'avant -->
+    <rect x="222" y="-6" width="34" height="26" fill="#1f7a4d"/>
+    <rect x="234" y="-6" width="6" height="26" fill="#e8b830"/>
+    <rect x="222" y="2" width="34" height="5" fill="#e8b830"/>
+    <rect x="258" y="0" width="30" height="20" fill="#2a5db0"/>
+    <rect x="269" y="0" width="6" height="20" fill="#ffffff"/>
+
+    <!-- Père Noël : manteau -->
+    <path d="M92,14 C86,-30 104,-62 140,-70 C180,-76 206,-52 208,-10 L210,14 Z" fill="url(#f1-suit)"/>
+    <path d="M118,-42 C124,-22 122,0 116,14" fill="none" stroke="#6a0d16" stroke-width="3" opacity="0.5" filter="url(#f1-softSm)"/>
+    <path d="M172,-50 C180,-30 184,-10 182,12" fill="none" stroke="#6a0d16" stroke-width="3" opacity="0.45" filter="url(#f1-softSm)"/>
+    <path d="M110,-56 C130,-70 160,-72 184,-60" fill="none" stroke="#ff8a8a" stroke-width="3" opacity="0.35" filter="url(#f1-softSm)"/>
+    <!-- fourrure du col -->
+    <ellipse cx="152" cy="-62" rx="34" ry="10" fill="url(#f1-fluff)"/>
+    <!-- ceinture -->
+    <path d="M92,-6 C130,0 180,0 209,-8" fill="none" stroke="#17120f" stroke-width="14"/>
+    <path d="M94,-11 C130,-5 180,-5 207,-13" fill="none" stroke="#4a4038" stroke-width="2" opacity="0.7"/>
+    <rect x="140" y="-18" width="22" height="18" rx="3" fill="url(#f1-goldBall)"/>
+    <rect x="146" y="-13" width="10" height="8" rx="2" fill="#17120f"/>
+
+    <!-- bras vers les rênes -->
+    <path d="M186,-50 C204,-42 222,-34 242,-28" fill="none" stroke="#a51826" stroke-width="21" stroke-linecap="round"/>
+    <path d="M186,-56 C204,-48 222,-40 240,-34" fill="none" stroke="#e84545" stroke-width="5" stroke-linecap="round" opacity="0.5" filter="url(#f1-softSm)"/>
+    <ellipse cx="240" cy="-28" rx="8" ry="12" fill="url(#f1-fluff)" transform="rotate(-18 240 -28)"/>
+    <ellipse cx="256" cy="-26" rx="10" ry="9" fill="#17120f"/>
+    <ellipse cx="253" cy="-29" rx="4" ry="2.5" fill="#5a5048" opacity="0.7"/>
+
+    <!-- tête -->
+    <circle cx="152" cy="-92" r="26" fill="url(#f1-skin)"/>
+    <circle cx="127" cy="-92" r="5" fill="#e0a07e"/>
+    <circle cx="177" cy="-92" r="5" fill="#d99777"/>
+    <!-- joues -->
+    <circle cx="138" cy="-84" r="8" fill="#e8806f" opacity="0.45" filter="url(#f1-softSm)"/>
+    <circle cx="168" cy="-84" r="8" fill="#e8806f" opacity="0.45" filter="url(#f1-softSm)"/>
+    <!-- barbe -->
+    <path d="M126,-94 C119,-60 127,-30 154,-22 C181,-30 189,-60 181,-94 C173,-78 165,-74 154,-76 C143,-74 135,-78 126,-94 Z" fill="url(#f1-beard)"/>
+    <g fill="none" stroke="#c4c4d0" stroke-width="1.4" stroke-linecap="round">
+      <path d="M134,-72 C134,-56 140,-42 150,-32"/>
+      <path d="M144,-66 C144,-52 148,-40 154,-30"/>
+      <path d="M164,-66 C164,-52 160,-40 154,-30"/>
+      <path d="M174,-72 C174,-56 168,-42 158,-32"/>
+      <path d="M128,-80 C126,-62 130,-48 138,-38"/>
+      <path d="M180,-80 C182,-62 178,-48 170,-38"/>
+    </g>
+    <!-- moustache -->
+    <path d="M154,-77 C139,-86 126,-79 122,-67 C135,-65 146,-68 154,-72 Z" fill="#ffffff" stroke="#d2d2dc" stroke-width="1"/>
+    <path d="M154,-77 C169,-86 182,-79 186,-67 C173,-65 162,-68 154,-72 Z" fill="#ffffff" stroke="#d2d2dc" stroke-width="1"/>
+    <!-- bouche -->
+    <path d="M147,-63 C151,-59 157,-59 161,-63" fill="none" stroke="#9c4a3e" stroke-width="2" stroke-linecap="round"/>
+    <!-- nez -->
+    <ellipse cx="154" cy="-86" rx="6.5" ry="5.5" fill="#e99a86"/>
+    <ellipse cx="152.5" cy="-88" rx="2.2" ry="1.4" fill="#f7c4b4" opacity="0.8"/>
+    <!-- yeux -->
+    <ellipse cx="143" cy="-97" rx="3" ry="3.4" fill="#1d2b44"/>
+    <ellipse cx="165" cy="-97" rx="3" ry="3.4" fill="#1d2b44"/>
+    <circle cx="144" cy="-98.3" r="1" fill="#ffffff"/>
+    <circle cx="166" cy="-98.3" r="1" fill="#ffffff"/>
+    <!-- sourcils -->
+    <path d="M134,-103 C139,-109 147,-108 150,-103" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+    <path d="M158,-103 C161,-108 169,-109 174,-103" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- bonnet (pointe emportée par le vent) -->
+    <path d="M180,-106 C188,-146 150,-170 112,-152 C88,-140 72,-116 62,-90 C76,-98 88,-110 102,-112 C114,-114 124,-110 124,-106 Z" fill="url(#f1-suit)"/>
+    <path d="M118,-148 C140,-162 168,-160 182,-138" fill="none" stroke="#ff9a9a" stroke-width="4" opacity="0.35" filter="url(#f1-softSm)"/>
+    <path d="M110,-124 C96,-122 82,-112 72,-98" fill="none" stroke="#6a0d16" stroke-width="3" opacity="0.4" filter="url(#f1-softSm)"/>
+    <ellipse cx="152" cy="-105" rx="35" ry="10" fill="url(#f1-fluff)"/>
+    <g fill="url(#f1-fluff)">
+      <circle cx="124" cy="-104" r="7"/><circle cx="136" cy="-98" r="7"/>
+      <circle cx="152" cy="-96" r="7.5"/><circle cx="168" cy="-98" r="7"/>
+      <circle cx="180" cy="-104" r="7"/>
+    </g>
+    <circle cx="60" cy="-86" r="12" fill="url(#f1-fluff)"/>
+
+    <!-- caisse du traîneau -->
+    <path d="M-18,-34 C-34,0 -24,50 10,78 C45,104 130,108 205,104 C285,100 335,76 354,16 C358,2 354,-6 346,-14 C336,6 320,14 300,14 L30,14 C6,14 -10,-8 -18,-34 Z" fill="url(#f1-redBody)"/>
+    <!-- reflets laqués -->
+    <path d="M6,56 C60,92 150,96 214,92" fill="none" stroke="#ff7b7b" stroke-width="6" opacity="0.28" filter="url(#f1-soft)"/>
+    <path d="M40,26 L296,26" fill="none" stroke="#ff7b7b" stroke-width="4" opacity="0.25" filter="url(#f1-softSm)"/>
+    <path d="M40,100 C120,108 250,104 330,60" fill="none" stroke="#2c0408" stroke-width="8" opacity="0.35" filter="url(#f1-soft)"/>
+    <!-- motifs dorés -->
+    <path d="M50,56 C80,36 124,36 146,56 C168,76 214,76 244,56 C262,44 282,44 300,52" fill="none" stroke="url(#f1-goldH)" stroke-width="3" stroke-linecap="round"/>
+    <g fill="url(#f1-goldBall)">
+      <circle cx="50" cy="56" r="4"/><circle cx="146" cy="56" r="4"/><circle cx="244" cy="56" r="4"/><circle cx="300" cy="52" r="3.5"/>
+    </g>
+    <!-- rebord doré -->
+    <path d="M-18,-34 C-10,-8 6,14 30,14 L300,14 C320,14 336,6 346,-14" fill="none" stroke="url(#f1-goldH)" stroke-width="8" stroke-linecap="round"/>
+    <path d="M-16,-32 C-8,-8 8,12 30,12 L300,12 C320,12 334,4 344,-14" fill="none" stroke="#fff6c0" stroke-width="1.6" stroke-linecap="round" opacity="0.7"/>
+    <circle cx="-18" cy="-37" r="6" fill="url(#f1-goldBall)"/>
+    <circle cx="346" cy="-17" r="6" fill="url(#f1-goldBall)"/>
+    <!-- patins -->
+    <g fill="none" stroke="url(#f1-goldH)" stroke-linecap="round">
+      <path d="M-50,134 L330,134 C370,134 380,112 366,92" stroke-width="9"/>
+      <path d="M-50,134 C-70,134 -70,112 -58,104" stroke-width="9"/>
+      <path d="M50,98 L44,134 M270,96 L276,134" stroke-width="7"/>
+    </g>
+    <path d="M-44,131 L328,131" fill="none" stroke="#fff6c0" stroke-width="1.6" opacity="0.7" stroke-linecap="round"/>
+  </g>
+
+  <!-- Rênes -->
+  <path d="M352,204 C480,196 640,236 726,268" fill="none" stroke="#2b1a0e" stroke-width="2.5" stroke-linecap="round"/>
+</svg><svg x="660" y="0" width="330" height="110" viewBox="0 0 1320 440">
+  <title>Le Père Noël, son traîneau et ses rennes</title>
+  <defs>
+    <!-- Dégradés -->
+    <linearGradient id="f2-fur" gradientUnits="userSpaceOnUse" x1="0" y1="-50" x2="0" y2="36">
+      <stop offset="0" stop-color="#5e3718"/>
+      <stop offset="0.45" stop-color="#8c5a2b"/>
+      <stop offset="0.8" stop-color="#b58a58"/>
+      <stop offset="1" stop-color="#e2d0b0"/>
+    </linearGradient>
+    <linearGradient id="f2-headGrad" gradientUnits="userSpaceOnUse" x1="0" y1="-108" x2="0" y2="-54">
+      <stop offset="0" stop-color="#5e3718"/>
+      <stop offset="1" stop-color="#9a6a38"/>
+    </linearGradient>
+    <linearGradient id="f2-redBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d42a38"/>
+      <stop offset="0.55" stop-color="#a51826"/>
+      <stop offset="1" stop-color="#5e0c16"/>
+    </linearGradient>
+    <linearGradient id="f2-suit" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e84545"/>
+      <stop offset="0.55" stop-color="#bd1f2b"/>
+      <stop offset="1" stop-color="#7d1019"/>
+    </linearGradient>
+    <linearGradient id="f2-goldH" gradientUnits="userSpaceOnUse" x1="0" y1="-40" x2="0" y2="140">
+      <stop offset="0" stop-color="#fff0a8"/>
+      <stop offset="0.35" stop-color="#e8b830"/>
+      <stop offset="0.7" stop-color="#c18a1c"/>
+      <stop offset="1" stop-color="#f3d36a"/>
+    </linearGradient>
+    <radialGradient id="f2-goldBall" cx="0.35" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#fff6c0"/>
+      <stop offset="0.5" stop-color="#e3ae2a"/>
+      <stop offset="1" stop-color="#8a5e10"/>
+    </radialGradient>
+    <radialGradient id="f2-skin" cx="0.4" cy="0.35" r="0.8">
+      <stop offset="0" stop-color="#ffdcc2"/>
+      <stop offset="1" stop-color="#e0a07e"/>
+    </radialGradient>
+    <linearGradient id="f2-beard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#d3d3dc"/>
+    </linearGradient>
+    <radialGradient id="f2-fluff" cx="0.4" cy="0.35" r="0.75">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#cfcfd8"/>
+    </radialGradient>
+    <linearGradient id="f2-sack" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d1a674"/>
+      <stop offset="1" stop-color="#7a5230"/>
+    </linearGradient>
+    <radialGradient id="f2-noseGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ff3030" stop-opacity="0.95"/>
+      <stop offset="0.45" stop-color="#ff3030" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#ff3030" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Filtres -->
+    <filter id="f2-soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <filter id="f2-softSm" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.4"/>
+    </filter>
+    <filter id="f2-furTex" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="4" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.12  0 0 0 0 0.06  0 0 0 0 0.02  0 0 0 0.9 -0.35" result="specks"/>
+      <feComposite in="specks" in2="SourceAlpha" operator="in" result="d"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="d"/></feMerge>
+    </filter>
+
+    <!-- Bois du renne -->
+    <g id="f2-antler" fill="none" stroke-linecap="round">
+      <g stroke="#b58c58">
+        <path d="M102,-104 C98,-130 84,-152 60,-166" stroke-width="7"/>
+        <path d="M94,-124 C102,-138 112,-146 124,-148" stroke-width="5"/>
+        <path d="M82,-146 C84,-160 80,-174 72,-184" stroke-width="5"/>
+        <path d="M70,-156 C60,-152 48,-154 40,-148" stroke-width="4.5"/>
+        <path d="M104,-108 C116,-118 126,-120 134,-116" stroke-width="5.5"/>
+      </g>
+      <g stroke="#ecd7ae" opacity="0.85">
+        <path d="M101,-106 C97,-130 83,-151 60,-165" stroke-width="2.5"/>
+        <path d="M94,-125 C102,-139 112,-147 124,-149" stroke-width="1.8"/>
+        <path d="M82,-147 C84,-161 80,-175 72,-185" stroke-width="1.8"/>
+        <path d="M103,-109 C115,-119 125,-121 133,-117" stroke-width="2"/>
+      </g>
+    </g>
+
+    <!-- Renne réaliste, tourné vers la droite -->
+    <g id="f2-deer">
+      <!-- pattes lointaines -->
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(-19.00 40 20)"><path d="M40,20 L64,46" stroke="#4a2c12" stroke-width="14"/><path d="M64,46 L84,60" stroke="#4a2c12" stroke-width="8"/><path d="M84,60 L92,67" stroke="#1d1410" stroke-width="10"/></g><g transform="rotate(19.00 -40 14)"><path d="M-40,14 L-60,44" stroke="#4a2c12" stroke-width="18"/><path d="M-60,44 L-68,74" stroke="#4a2c12" stroke-width="8"/><path d="M-68,74 L-68,84" stroke="#1d1410" stroke-width="10"/></g></g>
+
+      <!-- bois -->
+      <use href="#f2-antler" transform="translate(16 -5) scale(0.93)" opacity="0.7"/>
+      <use href="#f2-antler"/>
+
+      <!-- cou -->
+      <path d="M50,-40 C64,-62 76,-84 90,-100 L114,-82 C108,-60 102,-36 92,-12 C84,-2 70,4 58,12 Z" fill="url(#f2-fur)" filter="url(#f2-furTex)"/>
+      <!-- corps -->
+      <path d="M-72,-10 C-74,-36 -40,-46 0,-44 C36,-44 62,-40 76,-24 C84,-8 78,18 58,28 C30,38 -10,34 -40,30 C-64,26 -71,10 -72,-10 Z" fill="url(#f2-fur)" filter="url(#f2-furTex)"/>
+      <!-- crinière blanche -->
+      <path d="M88,-12 C98,-34 106,-58 112,-80 C120,-70 124,-46 116,-22 C110,-8 98,2 84,10 Z" fill="#f0e8d8" opacity="0.92" filter="url(#f2-softSm)"/>
+      <!-- volumes : lumière et ombres -->
+      <path d="M-60,-32 C-30,-44 20,-44 62,-34" fill="none" stroke="#c28c52" stroke-width="6" opacity="0.5" filter="url(#f2-soft)"/>
+      <path d="M40,-30 C52,-10 50,10 38,24" fill="none" stroke="#3d2210" stroke-width="5" opacity="0.4" filter="url(#f2-soft)"/>
+      <path d="M-50,-28 C-64,-6 -60,14 -44,28" fill="none" stroke="#3d2210" stroke-width="6" opacity="0.4" filter="url(#f2-soft)"/>
+      <!-- queue -->
+      <path d="M-70,-26 C-82,-34 -92,-30 -94,-20 C-88,-18 -78,-20 -70,-16 Z" fill="#ecdfc8"/>
+
+      <!-- oreille arrière -->
+      <path d="M92,-100 C80,-118 66,-122 58,-114 C66,-108 80,-102 92,-94 Z" fill="#5e3718"/>
+      <path d="M86,-102 C78,-112 70,-114 66,-112 C72,-108 80,-104 88,-98 Z" fill="#d49a72" opacity="0.7"/>
+      <!-- tête -->
+      <path d="M88,-98 C100,-108 120,-102 134,-86 C144,-76 150,-68 148,-60 C144,-54 134,-56 126,-60 C112,-64 98,-70 90,-80 Z" fill="url(#f2-headGrad)" filter="url(#f2-furTex)"/>
+      <ellipse cx="139" cy="-62" rx="12" ry="7" fill="#cfa97f" transform="rotate(-8 139 -62)"/>
+      <path d="M130,-58 C138,-56 146,-57 150,-60" fill="none" stroke="#2a1d18" stroke-width="1.5" stroke-linecap="round"/>
+      <circle cx="148" cy="-62" r="5.5" fill="#241914"/>
+      <circle cx="146.5" cy="-64" r="1.6" fill="#6b5a50"/>
+      <!-- oeil -->
+      <ellipse cx="107" cy="-89" rx="4.6" ry="3.6" fill="#1a110c"/>
+      <circle cx="108.5" cy="-90.4" r="1.3" fill="#ffffff"/>
+      <path d="M100,-93 C105,-97 112,-96 115,-92" fill="none" stroke="#3d2210" stroke-width="1.6" stroke-linecap="round"/>
+
+      <!-- pattes proches -->
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(19.00 50 16)"><path d="M50,16 L88,30" stroke="#764a22" stroke-width="15"/><path d="M88,30 L120,32" stroke="#764a22" stroke-width="9"/><path d="M120,32 L132,34" stroke="#1d1410" stroke-width="10"/></g><g transform="rotate(-19.00 -52 10)"><path d="M-52,10 L-82,34" stroke="#7a4c24" stroke-width="22"/><path d="M-82,34 L-114,44" stroke="#7a4c24" stroke-width="10"/><path d="M-114,44 L-125,48" stroke="#1d1410" stroke-width="11"/></g></g>
+
+      <!-- harnais -->
+      <path d="M8,-42 C14,-12 6,16 -2,34" fill="none" stroke="#7d1620" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="9" cy="-14" r="4.5" fill="url(#f2-goldBall)"/>
+      <path d="M70,-58 C84,-52 98,-46 108,-40" fill="none" stroke="#8c1b24" stroke-width="9" stroke-linecap="round"/>
+      <path d="M72,-61 C85,-55 98,-49 106,-44" fill="none" stroke="#e8c15a" stroke-width="1.2" stroke-dasharray="3 3"/>
+      <circle cx="108" cy="-35" r="7" fill="url(#f2-goldBall)"/>
+      <path d="M102,-35 L114,-35" stroke="#7a5410" stroke-width="1.2"/>
+    </g>
+  </defs>
+
+  <!-- ===== Traits d'attelage ===== -->
+  <g fill="none" stroke="#4a2d16" stroke-width="3" stroke-linecap="round">
+    <path d="M444,248 C484,258 520,278 552,298"/>
+    <path d="M698,290 C735,292 770,288 805,282"/>
+    <path d="M953,272 C990,272 1025,268 1060,264"/>
+  </g>
+
+  <!-- ===== Rennes ===== -->
+  <use href="#f2-deer" transform="translate(620 310) rotate(-3)"/>
+  <use href="#f2-deer" transform="translate(875 292) rotate(-4) scale(0.98)"/>
+  <g transform="translate(1130 274) rotate(-5) scale(0.96)">
+    <use href="#f2-deer"/>
+    <!-- Rudolph -->
+    <circle cx="148" cy="-62" r="36.40" opacity="0.96" fill="url(#f2-noseGlow)"/>
+    <circle cx="148" cy="-62" r="6.5" fill="#ff2323"/>
+    <circle cx="146" cy="-64.5" r="2" fill="#ffc2c2"/>
+  </g>
+
+  <!-- ===== Traîneau et Père Noël ===== -->
+  <g transform="translate(90 230)">
+    <!-- sac de cadeaux -->
+    <path d="M10,14 C-6,-30 20,-70 66,-72 C108,-70 122,-30 108,14 Z" fill="url(#f2-sack)"/>
+    <path d="M30,-20 C34,-40 44,-56 56,-64" fill="none" stroke="#5c3a1e" stroke-width="3" opacity="0.5" filter="url(#f2-softSm)"/>
+    <path d="M52,-70 C54,-88 80,-90 82,-70" fill="url(#f2-sack)" stroke="#5c3a1e" stroke-width="1.5"/>
+    <path d="M48,-68 C60,-62 74,-62 86,-68" fill="none" stroke="#8c1b24" stroke-width="6" stroke-linecap="round"/>
+    <!-- cadeaux qui dépassent du sac -->
+    <g transform="rotate(-12 43 -81)">
+      <rect x="28" y="-96" width="30" height="30" fill="#1f7a4d"/>
+      <rect x="40" y="-96" width="6" height="30" fill="#e8b830"/>
+      <rect x="28" y="-84" width="30" height="6" fill="#e8b830"/>
+    </g>
+    <g transform="rotate(10 87 -98)">
+      <rect x="74" y="-110" width="26" height="26" fill="#2a5db0"/>
+      <rect x="84" y="-110" width="6" height="26" fill="#ffffff"/>
+      <rect x="74" y="-100" width="26" height="5" fill="#ffffff"/>
+    </g>
+
+    <!-- cadeaux à l'avant -->
+    <rect x="222" y="-6" width="34" height="26" fill="#1f7a4d"/>
+    <rect x="234" y="-6" width="6" height="26" fill="#e8b830"/>
+    <rect x="222" y="2" width="34" height="5" fill="#e8b830"/>
+    <rect x="258" y="0" width="30" height="20" fill="#2a5db0"/>
+    <rect x="269" y="0" width="6" height="20" fill="#ffffff"/>
+
+    <!-- Père Noël : manteau -->
+    <path d="M92,14 C86,-30 104,-62 140,-70 C180,-76 206,-52 208,-10 L210,14 Z" fill="url(#f2-suit)"/>
+    <path d="M118,-42 C124,-22 122,0 116,14" fill="none" stroke="#6a0d16" stroke-width="3" opacity="0.5" filter="url(#f2-softSm)"/>
+    <path d="M172,-50 C180,-30 184,-10 182,12" fill="none" stroke="#6a0d16" stroke-width="3" opacity="0.45" filter="url(#f2-softSm)"/>
+    <path d="M110,-56 C130,-70 160,-72 184,-60" fill="none" stroke="#ff8a8a" stroke-width="3" opacity="0.35" filter="url(#f2-softSm)"/>
+    <!-- fourrure du col -->
+    <ellipse cx="152" cy="-62" rx="34" ry="10" fill="url(#f2-fluff)"/>
+    <!-- ceinture -->
+    <path d="M92,-6 C130,0 180,0 209,-8" fill="none" stroke="#17120f" stroke-width="14"/>
+    <path d="M94,-11 C130,-5 180,-5 207,-13" fill="none" stroke="#4a4038" stroke-width="2" opacity="0.7"/>
+    <rect x="140" y="-18" width="22" height="18" rx="3" fill="url(#f2-goldBall)"/>
+    <rect x="146" y="-13" width="10" height="8" rx="2" fill="#17120f"/>
+
+    <!-- bras vers les rênes -->
+    <path d="M186,-50 C204,-42 222,-34 242,-28" fill="none" stroke="#a51826" stroke-width="21" stroke-linecap="round"/>
+    <path d="M186,-56 C204,-48 222,-40 240,-34" fill="none" stroke="#e84545" stroke-width="5" stroke-linecap="round" opacity="0.5" filter="url(#f2-softSm)"/>
+    <ellipse cx="240" cy="-28" rx="8" ry="12" fill="url(#f2-fluff)" transform="rotate(-18 240 -28)"/>
+    <ellipse cx="256" cy="-26" rx="10" ry="9" fill="#17120f"/>
+    <ellipse cx="253" cy="-29" rx="4" ry="2.5" fill="#5a5048" opacity="0.7"/>
+
+    <!-- tête -->
+    <circle cx="152" cy="-92" r="26" fill="url(#f2-skin)"/>
+    <circle cx="127" cy="-92" r="5" fill="#e0a07e"/>
+    <circle cx="177" cy="-92" r="5" fill="#d99777"/>
+    <!-- joues -->
+    <circle cx="138" cy="-84" r="8" fill="#e8806f" opacity="0.45" filter="url(#f2-softSm)"/>
+    <circle cx="168" cy="-84" r="8" fill="#e8806f" opacity="0.45" filter="url(#f2-softSm)"/>
+    <!-- barbe -->
+    <path d="M126,-94 C119,-60 127,-30 154,-22 C181,-30 189,-60 181,-94 C173,-78 165,-74 154,-76 C143,-74 135,-78 126,-94 Z" fill="url(#f2-beard)"/>
+    <g fill="none" stroke="#c4c4d0" stroke-width="1.4" stroke-linecap="round">
+      <path d="M134,-72 C134,-56 140,-42 150,-32"/>
+      <path d="M144,-66 C144,-52 148,-40 154,-30"/>
+      <path d="M164,-66 C164,-52 160,-40 154,-30"/>
+      <path d="M174,-72 C174,-56 168,-42 158,-32"/>
+      <path d="M128,-80 C126,-62 130,-48 138,-38"/>
+      <path d="M180,-80 C182,-62 178,-48 170,-38"/>
+    </g>
+    <!-- moustache -->
+    <path d="M154,-77 C139,-86 126,-79 122,-67 C135,-65 146,-68 154,-72 Z" fill="#ffffff" stroke="#d2d2dc" stroke-width="1"/>
+    <path d="M154,-77 C169,-86 182,-79 186,-67 C173,-65 162,-68 154,-72 Z" fill="#ffffff" stroke="#d2d2dc" stroke-width="1"/>
+    <!-- bouche -->
+    <path d="M147,-63 C151,-59 157,-59 161,-63" fill="none" stroke="#9c4a3e" stroke-width="2" stroke-linecap="round"/>
+    <!-- nez -->
+    <ellipse cx="154" cy="-86" rx="6.5" ry="5.5" fill="#e99a86"/>
+    <ellipse cx="152.5" cy="-88" rx="2.2" ry="1.4" fill="#f7c4b4" opacity="0.8"/>
+    <!-- yeux -->
+    <ellipse cx="143" cy="-97" rx="3" ry="3.4" fill="#1d2b44"/>
+    <ellipse cx="165" cy="-97" rx="3" ry="3.4" fill="#1d2b44"/>
+    <circle cx="144" cy="-98.3" r="1" fill="#ffffff"/>
+    <circle cx="166" cy="-98.3" r="1" fill="#ffffff"/>
+    <!-- sourcils -->
+    <path d="M134,-103 C139,-109 147,-108 150,-103" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+    <path d="M158,-103 C161,-108 169,-109 174,-103" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- bonnet (pointe emportée par le vent) -->
+    <path d="M180,-106 C188,-146 150,-170 112,-152 C88,-140 72,-116 62,-90 C76,-98 88,-110 102,-112 C114,-114 124,-110 124,-106 Z" fill="url(#f2-suit)"/>
+    <path d="M118,-148 C140,-162 168,-160 182,-138" fill="none" stroke="#ff9a9a" stroke-width="4" opacity="0.35" filter="url(#f2-softSm)"/>
+    <path d="M110,-124 C96,-122 82,-112 72,-98" fill="none" stroke="#6a0d16" stroke-width="3" opacity="0.4" filter="url(#f2-softSm)"/>
+    <ellipse cx="152" cy="-105" rx="35" ry="10" fill="url(#f2-fluff)"/>
+    <g fill="url(#f2-fluff)">
+      <circle cx="124" cy="-104" r="7"/><circle cx="136" cy="-98" r="7"/>
+      <circle cx="152" cy="-96" r="7.5"/><circle cx="168" cy="-98" r="7"/>
+      <circle cx="180" cy="-104" r="7"/>
+    </g>
+    <circle cx="60" cy="-86" r="12" fill="url(#f2-fluff)"/>
+
+    <!-- caisse du traîneau -->
+    <path d="M-18,-34 C-34,0 -24,50 10,78 C45,104 130,108 205,104 C285,100 335,76 354,16 C358,2 354,-6 346,-14 C336,6 320,14 300,14 L30,14 C6,14 -10,-8 -18,-34 Z" fill="url(#f2-redBody)"/>
+    <!-- reflets laqués -->
+    <path d="M6,56 C60,92 150,96 214,92" fill="none" stroke="#ff7b7b" stroke-width="6" opacity="0.28" filter="url(#f2-soft)"/>
+    <path d="M40,26 L296,26" fill="none" stroke="#ff7b7b" stroke-width="4" opacity="0.25" filter="url(#f2-softSm)"/>
+    <path d="M40,100 C120,108 250,104 330,60" fill="none" stroke="#2c0408" stroke-width="8" opacity="0.35" filter="url(#f2-soft)"/>
+    <!-- motifs dorés -->
+    <path d="M50,56 C80,36 124,36 146,56 C168,76 214,76 244,56 C262,44 282,44 300,52" fill="none" stroke="url(#f2-goldH)" stroke-width="3" stroke-linecap="round"/>
+    <g fill="url(#f2-goldBall)">
+      <circle cx="50" cy="56" r="4"/><circle cx="146" cy="56" r="4"/><circle cx="244" cy="56" r="4"/><circle cx="300" cy="52" r="3.5"/>
+    </g>
+    <!-- rebord doré -->
+    <path d="M-18,-34 C-10,-8 6,14 30,14 L300,14 C320,14 336,6 346,-14" fill="none" stroke="url(#f2-goldH)" stroke-width="8" stroke-linecap="round"/>
+    <path d="M-16,-32 C-8,-8 8,12 30,12 L300,12 C320,12 334,4 344,-14" fill="none" stroke="#fff6c0" stroke-width="1.6" stroke-linecap="round" opacity="0.7"/>
+    <circle cx="-18" cy="-37" r="6" fill="url(#f2-goldBall)"/>
+    <circle cx="346" cy="-17" r="6" fill="url(#f2-goldBall)"/>
+    <!-- patins -->
+    <g fill="none" stroke="url(#f2-goldH)" stroke-linecap="round">
+      <path d="M-50,134 L330,134 C370,134 380,112 366,92" stroke-width="9"/>
+      <path d="M-50,134 C-70,134 -70,112 -58,104" stroke-width="9"/>
+      <path d="M50,98 L44,134 M270,96 L276,134" stroke-width="7"/>
+    </g>
+    <path d="M-44,131 L328,131" fill="none" stroke="#fff6c0" stroke-width="1.6" opacity="0.7" stroke-linecap="round"/>
+  </g>
+
+  <!-- Rênes -->
+  <path d="M352,204 C480,196 640,236 726,268" fill="none" stroke="#2b1a0e" stroke-width="2.5" stroke-linecap="round"/>
+</svg><svg x="990" y="0" width="330" height="110" viewBox="0 0 1320 440">
+  <title>Le Père Noël, son traîneau et ses rennes</title>
+  <defs>
+    <!-- Dégradés -->
+    <linearGradient id="f3-fur" gradientUnits="userSpaceOnUse" x1="0" y1="-50" x2="0" y2="36">
+      <stop offset="0" stop-color="#5e3718"/>
+      <stop offset="0.45" stop-color="#8c5a2b"/>
+      <stop offset="0.8" stop-color="#b58a58"/>
+      <stop offset="1" stop-color="#e2d0b0"/>
+    </linearGradient>
+    <linearGradient id="f3-headGrad" gradientUnits="userSpaceOnUse" x1="0" y1="-108" x2="0" y2="-54">
+      <stop offset="0" stop-color="#5e3718"/>
+      <stop offset="1" stop-color="#9a6a38"/>
+    </linearGradient>
+    <linearGradient id="f3-redBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d42a38"/>
+      <stop offset="0.55" stop-color="#a51826"/>
+      <stop offset="1" stop-color="#5e0c16"/>
+    </linearGradient>
+    <linearGradient id="f3-suit" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e84545"/>
+      <stop offset="0.55" stop-color="#bd1f2b"/>
+      <stop offset="1" stop-color="#7d1019"/>
+    </linearGradient>
+    <linearGradient id="f3-goldH" gradientUnits="userSpaceOnUse" x1="0" y1="-40" x2="0" y2="140">
+      <stop offset="0" stop-color="#fff0a8"/>
+      <stop offset="0.35" stop-color="#e8b830"/>
+      <stop offset="0.7" stop-color="#c18a1c"/>
+      <stop offset="1" stop-color="#f3d36a"/>
+    </linearGradient>
+    <radialGradient id="f3-goldBall" cx="0.35" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#fff6c0"/>
+      <stop offset="0.5" stop-color="#e3ae2a"/>
+      <stop offset="1" stop-color="#8a5e10"/>
+    </radialGradient>
+    <radialGradient id="f3-skin" cx="0.4" cy="0.35" r="0.8">
+      <stop offset="0" stop-color="#ffdcc2"/>
+      <stop offset="1" stop-color="#e0a07e"/>
+    </radialGradient>
+    <linearGradient id="f3-beard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#d3d3dc"/>
+    </linearGradient>
+    <radialGradient id="f3-fluff" cx="0.4" cy="0.35" r="0.75">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#cfcfd8"/>
+    </radialGradient>
+    <linearGradient id="f3-sack" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d1a674"/>
+      <stop offset="1" stop-color="#7a5230"/>
+    </linearGradient>
+    <radialGradient id="f3-noseGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ff3030" stop-opacity="0.95"/>
+      <stop offset="0.45" stop-color="#ff3030" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#ff3030" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Filtres -->
+    <filter id="f3-soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <filter id="f3-softSm" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.4"/>
+    </filter>
+    <filter id="f3-furTex" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="4" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.12  0 0 0 0 0.06  0 0 0 0 0.02  0 0 0 0.9 -0.35" result="specks"/>
+      <feComposite in="specks" in2="SourceAlpha" operator="in" result="d"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="d"/></feMerge>
+    </filter>
+
+    <!-- Bois du renne -->
+    <g id="f3-antler" fill="none" stroke-linecap="round">
+      <g stroke="#b58c58">
+        <path d="M102,-104 C98,-130 84,-152 60,-166" stroke-width="7"/>
+        <path d="M94,-124 C102,-138 112,-146 124,-148" stroke-width="5"/>
+        <path d="M82,-146 C84,-160 80,-174 72,-184" stroke-width="5"/>
+        <path d="M70,-156 C60,-152 48,-154 40,-148" stroke-width="4.5"/>
+        <path d="M104,-108 C116,-118 126,-120 134,-116" stroke-width="5.5"/>
+      </g>
+      <g stroke="#ecd7ae" opacity="0.85">
+        <path d="M101,-106 C97,-130 83,-151 60,-165" stroke-width="2.5"/>
+        <path d="M94,-125 C102,-139 112,-147 124,-149" stroke-width="1.8"/>
+        <path d="M82,-147 C84,-161 80,-175 72,-185" stroke-width="1.8"/>
+        <path d="M103,-109 C115,-119 125,-121 133,-117" stroke-width="2"/>
+      </g>
+    </g>
+
+    <!-- Renne réaliste, tourné vers la droite -->
+    <g id="f3-deer">
+      <!-- pattes lointaines -->
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(-8.49 40 20)"><path d="M40,20 L64,46" stroke="#4a2c12" stroke-width="14"/><path d="M64,46 L84,60" stroke="#4a2c12" stroke-width="8"/><path d="M84,60 L92,67" stroke="#1d1410" stroke-width="10"/></g><g transform="rotate(8.49 -40 14)"><path d="M-40,14 L-60,44" stroke="#4a2c12" stroke-width="18"/><path d="M-60,44 L-68,74" stroke="#4a2c12" stroke-width="8"/><path d="M-68,74 L-68,84" stroke="#1d1410" stroke-width="10"/></g></g>
+
+      <!-- bois -->
+      <use href="#f3-antler" transform="translate(16 -5) scale(0.93)" opacity="0.7"/>
+      <use href="#f3-antler"/>
+
+      <!-- cou -->
+      <path d="M50,-40 C64,-62 76,-84 90,-100 L114,-82 C108,-60 102,-36 92,-12 C84,-2 70,4 58,12 Z" fill="url(#f3-fur)" filter="url(#f3-furTex)"/>
+      <!-- corps -->
+      <path d="M-72,-10 C-74,-36 -40,-46 0,-44 C36,-44 62,-40 76,-24 C84,-8 78,18 58,28 C30,38 -10,34 -40,30 C-64,26 -71,10 -72,-10 Z" fill="url(#f3-fur)" filter="url(#f3-furTex)"/>
+      <!-- crinière blanche -->
+      <path d="M88,-12 C98,-34 106,-58 112,-80 C120,-70 124,-46 116,-22 C110,-8 98,2 84,10 Z" fill="#f0e8d8" opacity="0.92" filter="url(#f3-softSm)"/>
+      <!-- volumes : lumière et ombres -->
+      <path d="M-60,-32 C-30,-44 20,-44 62,-34" fill="none" stroke="#c28c52" stroke-width="6" opacity="0.5" filter="url(#f3-soft)"/>
+      <path d="M40,-30 C52,-10 50,10 38,24" fill="none" stroke="#3d2210" stroke-width="5" opacity="0.4" filter="url(#f3-soft)"/>
+      <path d="M-50,-28 C-64,-6 -60,14 -44,28" fill="none" stroke="#3d2210" stroke-width="6" opacity="0.4" filter="url(#f3-soft)"/>
+      <!-- queue -->
+      <path d="M-70,-26 C-82,-34 -92,-30 -94,-20 C-88,-18 -78,-20 -70,-16 Z" fill="#ecdfc8"/>
+
+      <!-- oreille arrière -->
+      <path d="M92,-100 C80,-118 66,-122 58,-114 C66,-108 80,-102 92,-94 Z" fill="#5e3718"/>
+      <path d="M86,-102 C78,-112 70,-114 66,-112 C72,-108 80,-104 88,-98 Z" fill="#d49a72" opacity="0.7"/>
+      <!-- tête -->
+      <path d="M88,-98 C100,-108 120,-102 134,-86 C144,-76 150,-68 148,-60 C144,-54 134,-56 126,-60 C112,-64 98,-70 90,-80 Z" fill="url(#f3-headGrad)" filter="url(#f3-furTex)"/>
+      <ellipse cx="139" cy="-62" rx="12" ry="7" fill="#cfa97f" transform="rotate(-8 139 -62)"/>
+      <path d="M130,-58 C138,-56 146,-57 150,-60" fill="none" stroke="#2a1d18" stroke-width="1.5" stroke-linecap="round"/>
+      <circle cx="148" cy="-62" r="5.5" fill="#241914"/>
+      <circle cx="146.5" cy="-64" r="1.6" fill="#6b5a50"/>
+      <!-- oeil -->
+      <ellipse cx="107" cy="-89" rx="4.6" ry="3.6" fill="#1a110c"/>
+      <circle cx="108.5" cy="-90.4" r="1.3" fill="#ffffff"/>
+      <path d="M100,-93 C105,-97 112,-96 115,-92" fill="none" stroke="#3d2210" stroke-width="1.6" stroke-linecap="round"/>
+
+      <!-- pattes proches -->
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(8.49 50 16)"><path d="M50,16 L88,30" stroke="#764a22" stroke-width="15"/><path d="M88,30 L120,32" stroke="#764a22" stroke-width="9"/><path d="M120,32 L132,34" stroke="#1d1410" stroke-width="10"/></g><g transform="rotate(-8.49 -52 10)"><path d="M-52,10 L-82,34" stroke="#7a4c24" stroke-width="22"/><path d="M-82,34 L-114,44" stroke="#7a4c24" stroke-width="10"/><path d="M-114,44 L-125,48" stroke="#1d1410" stroke-width="11"/></g></g>
+
+      <!-- harnais -->
+      <path d="M8,-42 C14,-12 6,16 -2,34" fill="none" stroke="#7d1620" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="9" cy="-14" r="4.5" fill="url(#f3-goldBall)"/>
+      <path d="M70,-58 C84,-52 98,-46 108,-40" fill="none" stroke="#8c1b24" stroke-width="9" stroke-linecap="round"/>
+      <path d="M72,-61 C85,-55 98,-49 106,-44" fill="none" stroke="#e8c15a" stroke-width="1.2" stroke-dasharray="3 3"/>
+      <circle cx="108" cy="-35" r="7" fill="url(#f3-goldBall)"/>
+      <path d="M102,-35 L114,-35" stroke="#7a5410" stroke-width="1.2"/>
+    </g>
+  </defs>
+
+  <!-- ===== Traits d'attelage ===== -->
+  <g fill="none" stroke="#4a2d16" stroke-width="3" stroke-linecap="round">
+    <path d="M444,248 C484,258 520,278 552,298"/>
+    <path d="M698,290 C735,292 770,288 805,282"/>
+    <path d="M953,272 C990,272 1025,268 1060,264"/>
+  </g>
+
+  <!-- ===== Rennes ===== -->
+  <use href="#f3-deer" transform="translate(620 310) rotate(-3)"/>
+  <use href="#f3-deer" transform="translate(875 292) rotate(-4) scale(0.98)"/>
+  <g transform="translate(1130 274) rotate(-5) scale(0.96)">
+    <use href="#f3-deer"/>
+    <!-- Rudolph -->
+    <circle cx="148" cy="-62" r="35.35" opacity="0.89" fill="url(#f3-noseGlow)"/>
+    <circle cx="148" cy="-62" r="6.5" fill="#ff2323"/>
+    <circle cx="146" cy="-64.5" r="2" fill="#ffc2c2"/>
+  </g>
+
+  <!-- ===== Traîneau et Père Noël ===== -->
+  <g transform="translate(90 230)">
+    <!-- sac de cadeaux -->
+    <path d="M10,14 C-6,-30 20,-70 66,-72 C108,-70 122,-30 108,14 Z" fill="url(#f3-sack)"/>
+    <path d="M30,-20 C34,-40 44,-56 56,-64" fill="none" stroke="#5c3a1e" stroke-width="3" opacity="0.5" filter="url(#f3-softSm)"/>
+    <path d="M52,-70 C54,-88 80,-90 82,-70" fill="url(#f3-sack)" stroke="#5c3a1e" stroke-width="1.5"/>
+    <path d="M48,-68 C60,-62 74,-62 86,-68" fill="none" stroke="#8c1b24" stroke-width="6" stroke-linecap="round"/>
+    <!-- cadeaux qui dépassent du sac -->
+    <g transform="rotate(-12 43 -81)">
+      <rect x="28" y="-96" width="30" height="30" fill="#1f7a4d"/>
+      <rect x="40" y="-96" width="6" height="30" fill="#e8b830"/>
+      <rect x="28" y="-84" width="30" height="6" fill="#e8b830"/>
+    </g>
+    <g transform="rotate(10 87 -98)">
+      <rect x="74" y="-110" width="26" height="26" fill="#2a5db0"/>
+      <rect x="84" y="-110" width="6" height="26" fill="#ffffff"/>
+      <rect x="74" y="-100" width="26" height="5" fill="#ffffff"/>
+    </g>
+
+    <!-- cadeaux à l'avant -->
+    <rect x="222" y="-6" width="34" height="26" fill="#1f7a4d"/>
+    <rect x="234" y="-6" width="6" height="26" fill="#e8b830"/>
+    <rect x="222" y="2" width="34" height="5" fill="#e8b830"/>
+    <rect x="258" y="0" width="30" height="20" fill="#2a5db0"/>
+    <rect x="269" y="0" width="6" height="20" fill="#ffffff"/>
+
+    <!-- Père Noël : manteau -->
+    <path d="M92,14 C86,-30 104,-62 140,-70 C180,-76 206,-52 208,-10 L210,14 Z" fill="url(#f3-suit)"/>
+    <path d="M118,-42 C124,-22 122,0 116,14" fill="none" stroke="#6a0d16" stroke-width="3" opacity="0.5" filter="url(#f3-softSm)"/>
+    <path d="M172,-50 C180,-30 184,-10 182,12" fill="none" stroke="#6a0d16" stroke-width="3" opacity="0.45" filter="url(#f3-softSm)"/>
+    <path d="M110,-56 C130,-70 160,-72 184,-60" fill="none" stroke="#ff8a8a" stroke-width="3" opacity="0.35" filter="url(#f3-softSm)"/>
+    <!-- fourrure du col -->
+    <ellipse cx="152" cy="-62" rx="34" ry="10" fill="url(#f3-fluff)"/>
+    <!-- ceinture -->
+    <path d="M92,-6 C130,0 180,0 209,-8" fill="none" stroke="#17120f" stroke-width="14"/>
+    <path d="M94,-11 C130,-5 180,-5 207,-13" fill="none" stroke="#4a4038" stroke-width="2" opacity="0.7"/>
+    <rect x="140" y="-18" width="22" height="18" rx="3" fill="url(#f3-goldBall)"/>
+    <rect x="146" y="-13" width="10" height="8" rx="2" fill="#17120f"/>
+
+    <!-- bras vers les rênes -->
+    <path d="M186,-50 C204,-42 222,-34 242,-28" fill="none" stroke="#a51826" stroke-width="21" stroke-linecap="round"/>
+    <path d="M186,-56 C204,-48 222,-40 240,-34" fill="none" stroke="#e84545" stroke-width="5" stroke-linecap="round" opacity="0.5" filter="url(#f3-softSm)"/>
+    <ellipse cx="240" cy="-28" rx="8" ry="12" fill="url(#f3-fluff)" transform="rotate(-18 240 -28)"/>
+    <ellipse cx="256" cy="-26" rx="10" ry="9" fill="#17120f"/>
+    <ellipse cx="253" cy="-29" rx="4" ry="2.5" fill="#5a5048" opacity="0.7"/>
+
+    <!-- tête -->
+    <circle cx="152" cy="-92" r="26" fill="url(#f3-skin)"/>
+    <circle cx="127" cy="-92" r="5" fill="#e0a07e"/>
+    <circle cx="177" cy="-92" r="5" fill="#d99777"/>
+    <!-- joues -->
+    <circle cx="138" cy="-84" r="8" fill="#e8806f" opacity="0.45" filter="url(#f3-softSm)"/>
+    <circle cx="168" cy="-84" r="8" fill="#e8806f" opacity="0.45" filter="url(#f3-softSm)"/>
+    <!-- barbe -->
+    <path d="M126,-94 C119,-60 127,-30 154,-22 C181,-30 189,-60 181,-94 C173,-78 165,-74 154,-76 C143,-74 135,-78 126,-94 Z" fill="url(#f3-beard)"/>
+    <g fill="none" stroke="#c4c4d0" stroke-width="1.4" stroke-linecap="round">
+      <path d="M134,-72 C134,-56 140,-42 150,-32"/>
+      <path d="M144,-66 C144,-52 148,-40 154,-30"/>
+      <path d="M164,-66 C164,-52 160,-40 154,-30"/>
+      <path d="M174,-72 C174,-56 168,-42 158,-32"/>
+      <path d="M128,-80 C126,-62 130,-48 138,-38"/>
+      <path d="M180,-80 C182,-62 178,-48 170,-38"/>
+    </g>
+    <!-- moustache -->
+    <path d="M154,-77 C139,-86 126,-79 122,-67 C135,-65 146,-68 154,-72 Z" fill="#ffffff" stroke="#d2d2dc" stroke-width="1"/>
+    <path d="M154,-77 C169,-86 182,-79 186,-67 C173,-65 162,-68 154,-72 Z" fill="#ffffff" stroke="#d2d2dc" stroke-width="1"/>
+    <!-- bouche -->
+    <path d="M147,-63 C151,-59 157,-59 161,-63" fill="none" stroke="#9c4a3e" stroke-width="2" stroke-linecap="round"/>
+    <!-- nez -->
+    <ellipse cx="154" cy="-86" rx="6.5" ry="5.5" fill="#e99a86"/>
+    <ellipse cx="152.5" cy="-88" rx="2.2" ry="1.4" fill="#f7c4b4" opacity="0.8"/>
+    <!-- yeux -->
+    <ellipse cx="143" cy="-97" rx="3" ry="3.4" fill="#1d2b44"/>
+    <ellipse cx="165" cy="-97" rx="3" ry="3.4" fill="#1d2b44"/>
+    <circle cx="144" cy="-98.3" r="1" fill="#ffffff"/>
+    <circle cx="166" cy="-98.3" r="1" fill="#ffffff"/>
+    <!-- sourcils -->
+    <path d="M134,-103 C139,-109 147,-108 150,-103" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+    <path d="M158,-103 C161,-108 169,-109 174,-103" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- bonnet (pointe emportée par le vent) -->
+    <path d="M180,-106 C188,-146 150,-170 112,-152 C88,-140 72,-116 62,-90 C76,-98 88,-110 102,-112 C114,-114 124,-110 124,-106 Z" fill="url(#f3-suit)"/>
+    <path d="M118,-148 C140,-162 168,-160 182,-138" fill="none" stroke="#ff9a9a" stroke-width="4" opacity="0.35" filter="url(#f3-softSm)"/>
+    <path d="M110,-124 C96,-122 82,-112 72,-98" fill="none" stroke="#6a0d16" stroke-width="3" opacity="0.4" filter="url(#f3-softSm)"/>
+    <ellipse cx="152" cy="-105" rx="35" ry="10" fill="url(#f3-fluff)"/>
+    <g fill="url(#f3-fluff)">
+      <circle cx="124" cy="-104" r="7"/><circle cx="136" cy="-98" r="7"/>
+      <circle cx="152" cy="-96" r="7.5"/><circle cx="168" cy="-98" r="7"/>
+      <circle cx="180" cy="-104" r="7"/>
+    </g>
+    <circle cx="60" cy="-86" r="12" fill="url(#f3-fluff)"/>
+
+    <!-- caisse du traîneau -->
+    <path d="M-18,-34 C-34,0 -24,50 10,78 C45,104 130,108 205,104 C285,100 335,76 354,16 C358,2 354,-6 346,-14 C336,6 320,14 300,14 L30,14 C6,14 -10,-8 -18,-34 Z" fill="url(#f3-redBody)"/>
+    <!-- reflets laqués -->
+    <path d="M6,56 C60,92 150,96 214,92" fill="none" stroke="#ff7b7b" stroke-width="6" opacity="0.28" filter="url(#f3-soft)"/>
+    <path d="M40,26 L296,26" fill="none" stroke="#ff7b7b" stroke-width="4" opacity="0.25" filter="url(#f3-softSm)"/>
+    <path d="M40,100 C120,108 250,104 330,60" fill="none" stroke="#2c0408" stroke-width="8" opacity="0.35" filter="url(#f3-soft)"/>
+    <!-- motifs dorés -->
+    <path d="M50,56 C80,36 124,36 146,56 C168,76 214,76 244,56 C262,44 282,44 300,52" fill="none" stroke="url(#f3-goldH)" stroke-width="3" stroke-linecap="round"/>
+    <g fill="url(#f3-goldBall)">
+      <circle cx="50" cy="56" r="4"/><circle cx="146" cy="56" r="4"/><circle cx="244" cy="56" r="4"/><circle cx="300" cy="52" r="3.5"/>
+    </g>
+    <!-- rebord doré -->
+    <path d="M-18,-34 C-10,-8 6,14 30,14 L300,14 C320,14 336,6 346,-14" fill="none" stroke="url(#f3-goldH)" stroke-width="8" stroke-linecap="round"/>
+    <path d="M-16,-32 C-8,-8 8,12 30,12 L300,12 C320,12 334,4 344,-14" fill="none" stroke="#fff6c0" stroke-width="1.6" stroke-linecap="round" opacity="0.7"/>
+    <circle cx="-18" cy="-37" r="6" fill="url(#f3-goldBall)"/>
+    <circle cx="346" cy="-17" r="6" fill="url(#f3-goldBall)"/>
+    <!-- patins -->
+    <g fill="none" stroke="url(#f3-goldH)" stroke-linecap="round">
+      <path d="M-50,134 L330,134 C370,134 380,112 366,92" stroke-width="9"/>
+      <path d="M-50,134 C-70,134 -70,112 -58,104" stroke-width="9"/>
+      <path d="M50,98 L44,134 M270,96 L276,134" stroke-width="7"/>
+    </g>
+    <path d="M-44,131 L328,131" fill="none" stroke="#fff6c0" stroke-width="1.6" opacity="0.7" stroke-linecap="round"/>
+  </g>
+
+  <!-- Rênes -->
+  <path d="M352,204 C480,196 640,236 726,268" fill="none" stroke="#2b1a0e" stroke-width="2.5" stroke-linecap="round"/>
+</svg><svg x="0" y="110" width="330" height="110" viewBox="0 0 1320 440">
+  <title>Le Père Noël, son traîneau et ses rennes</title>
+  <defs>
+    <!-- Dégradés -->
+    <linearGradient id="f4-fur" gradientUnits="userSpaceOnUse" x1="0" y1="-50" x2="0" y2="36">
+      <stop offset="0" stop-color="#5e3718"/>
+      <stop offset="0.45" stop-color="#8c5a2b"/>
+      <stop offset="0.8" stop-color="#b58a58"/>
+      <stop offset="1" stop-color="#e2d0b0"/>
+    </linearGradient>
+    <linearGradient id="f4-headGrad" gradientUnits="userSpaceOnUse" x1="0" y1="-108" x2="0" y2="-54">
+      <stop offset="0" stop-color="#5e3718"/>
+      <stop offset="1" stop-color="#9a6a38"/>
+    </linearGradient>
+    <linearGradient id="f4-redBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d42a38"/>
+      <stop offset="0.55" stop-color="#a51826"/>
+      <stop offset="1" stop-color="#5e0c16"/>
+    </linearGradient>
+    <linearGradient id="f4-suit" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e84545"/>
+      <stop offset="0.55" stop-color="#bd1f2b"/>
+      <stop offset="1" stop-color="#7d1019"/>
+    </linearGradient>
+    <linearGradient id="f4-goldH" gradientUnits="userSpaceOnUse" x1="0" y1="-40" x2="0" y2="140">
+      <stop offset="0" stop-color="#fff0a8"/>
+      <stop offset="0.35" stop-color="#e8b830"/>
+      <stop offset="0.7" stop-color="#c18a1c"/>
+      <stop offset="1" stop-color="#f3d36a"/>
+    </linearGradient>
+    <radialGradient id="f4-goldBall" cx="0.35" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#fff6c0"/>
+      <stop offset="0.5" stop-color="#e3ae2a"/>
+      <stop offset="1" stop-color="#8a5e10"/>
+    </radialGradient>
+    <radialGradient id="f4-skin" cx="0.4" cy="0.35" r="0.8">
+      <stop offset="0" stop-color="#ffdcc2"/>
+      <stop offset="1" stop-color="#e0a07e"/>
+    </radialGradient>
+    <linearGradient id="f4-beard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#d3d3dc"/>
+    </linearGradient>
+    <radialGradient id="f4-fluff" cx="0.4" cy="0.35" r="0.75">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#cfcfd8"/>
+    </radialGradient>
+    <linearGradient id="f4-sack" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d1a674"/>
+      <stop offset="1" stop-color="#7a5230"/>
+    </linearGradient>
+    <radialGradient id="f4-noseGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ff3030" stop-opacity="0.95"/>
+      <stop offset="0.45" stop-color="#ff3030" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#ff3030" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Filtres -->
+    <filter id="f4-soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <filter id="f4-softSm" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.4"/>
+    </filter>
+    <filter id="f4-furTex" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="4" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.12  0 0 0 0 0.06  0 0 0 0 0.02  0 0 0 0.9 -0.35" result="specks"/>
+      <feComposite in="specks" in2="SourceAlpha" operator="in" result="d"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="d"/></feMerge>
+    </filter>
+
+    <!-- Bois du renne -->
+    <g id="f4-antler" fill="none" stroke-linecap="round">
+      <g stroke="#b58c58">
+        <path d="M102,-104 C98,-130 84,-152 60,-166" stroke-width="7"/>
+        <path d="M94,-124 C102,-138 112,-146 124,-148" stroke-width="5"/>
+        <path d="M82,-146 C84,-160 80,-174 72,-184" stroke-width="5"/>
+        <path d="M70,-156 C60,-152 48,-154 40,-148" stroke-width="4.5"/>
+        <path d="M104,-108 C116,-118 126,-120 134,-116" stroke-width="5.5"/>
+      </g>
+      <g stroke="#ecd7ae" opacity="0.85">
+        <path d="M101,-106 C97,-130 83,-151 60,-165" stroke-width="2.5"/>
+        <path d="M94,-125 C102,-139 112,-147 124,-149" stroke-width="1.8"/>
+        <path d="M82,-147 C84,-161 80,-175 72,-185" stroke-width="1.8"/>
+        <path d="M103,-109 C115,-119 125,-121 133,-117" stroke-width="2"/>
+      </g>
+    </g>
+
+    <!-- Renne réaliste, tourné vers la droite -->
+    <g id="f4-deer">
+      <!-- pattes lointaines -->
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(7.00 40 20)"><path d="M40,20 L64,46" stroke="#4a2c12" stroke-width="14"/><path d="M64,46 L84,60" stroke="#4a2c12" stroke-width="8"/><path d="M84,60 L92,67" stroke="#1d1410" stroke-width="10"/></g><g transform="rotate(-7.00 -40 14)"><path d="M-40,14 L-60,44" stroke="#4a2c12" stroke-width="18"/><path d="M-60,44 L-68,74" stroke="#4a2c12" stroke-width="8"/><path d="M-68,74 L-68,84" stroke="#1d1410" stroke-width="10"/></g></g>
+
+      <!-- bois -->
+      <use href="#f4-antler" transform="translate(16 -5) scale(0.93)" opacity="0.7"/>
+      <use href="#f4-antler"/>
+
+      <!-- cou -->
+      <path d="M50,-40 C64,-62 76,-84 90,-100 L114,-82 C108,-60 102,-36 92,-12 C84,-2 70,4 58,12 Z" fill="url(#f4-fur)" filter="url(#f4-furTex)"/>
+      <!-- corps -->
+      <path d="M-72,-10 C-74,-36 -40,-46 0,-44 C36,-44 62,-40 76,-24 C84,-8 78,18 58,28 C30,38 -10,34 -40,30 C-64,26 -71,10 -72,-10 Z" fill="url(#f4-fur)" filter="url(#f4-furTex)"/>
+      <!-- crinière blanche -->
+      <path d="M88,-12 C98,-34 106,-58 112,-80 C120,-70 124,-46 116,-22 C110,-8 98,2 84,10 Z" fill="#f0e8d8" opacity="0.92" filter="url(#f4-softSm)"/>
+      <!-- volumes : lumière et ombres -->
+      <path d="M-60,-32 C-30,-44 20,-44 62,-34" fill="none" stroke="#c28c52" stroke-width="6" opacity="0.5" filter="url(#f4-soft)"/>
+      <path d="M40,-30 C52,-10 50,10 38,24" fill="none" stroke="#3d2210" stroke-width="5" opacity="0.4" filter="url(#f4-soft)"/>
+      <path d="M-50,-28 C-64,-6 -60,14 -44,28" fill="none" stroke="#3d2210" stroke-width="6" opacity="0.4" filter="url(#f4-soft)"/>
+      <!-- queue -->
+      <path d="M-70,-26 C-82,-34 -92,-30 -94,-20 C-88,-18 -78,-20 -70,-16 Z" fill="#ecdfc8"/>
+
+      <!-- oreille arrière -->
+      <path d="M92,-100 C80,-118 66,-122 58,-114 C66,-108 80,-102 92,-94 Z" fill="#5e3718"/>
+      <path d="M86,-102 C78,-112 70,-114 66,-112 C72,-108 80,-104 88,-98 Z" fill="#d49a72" opacity="0.7"/>
+      <!-- tête -->
+      <path d="M88,-98 C100,-108 120,-102 134,-86 C144,-76 150,-68 148,-60 C144,-54 134,-56 126,-60 C112,-64 98,-70 90,-80 Z" fill="url(#f4-headGrad)" filter="url(#f4-furTex)"/>
+      <ellipse cx="139" cy="-62" rx="12" ry="7" fill="#cfa97f" transform="rotate(-8 139 -62)"/>
+      <path d="M130,-58 C138,-56 146,-57 150,-60" fill="none" stroke="#2a1d18" stroke-width="1.5" stroke-linecap="round"/>
+      <circle cx="148" cy="-62" r="5.5" fill="#241914"/>
+      <circle cx="146.5" cy="-64" r="1.6" fill="#6b5a50"/>
+      <!-- oeil -->
+      <ellipse cx="107" cy="-89" rx="4.6" ry="3.6" fill="#1a110c"/>
+      <circle cx="108.5" cy="-90.4" r="1.3" fill="#ffffff"/>
+      <path d="M100,-93 C105,-97 112,-96 115,-92" fill="none" stroke="#3d2210" stroke-width="1.6" stroke-linecap="round"/>
+
+      <!-- pattes proches -->
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(-7.00 50 16)"><path d="M50,16 L88,30" stroke="#764a22" stroke-width="15"/><path d="M88,30 L120,32" stroke="#764a22" stroke-width="9"/><path d="M120,32 L132,34" stroke="#1d1410" stroke-width="10"/></g><g transform="rotate(7.00 -52 10)"><path d="M-52,10 L-82,34" stroke="#7a4c24" stroke-width="22"/><path d="M-82,34 L-114,44" stroke="#7a4c24" stroke-width="10"/><path d="M-114,44 L-125,48" stroke="#1d1410" stroke-width="11"/></g></g>
+
+      <!-- harnais -->
+      <path d="M8,-42 C14,-12 6,16 -2,34" fill="none" stroke="#7d1620" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="9" cy="-14" r="4.5" fill="url(#f4-goldBall)"/>
+      <path d="M70,-58 C84,-52 98,-46 108,-40" fill="none" stroke="#8c1b24" stroke-width="9" stroke-linecap="round"/>
+      <path d="M72,-61 C85,-55 98,-49 106,-44" fill="none" stroke="#e8c15a" stroke-width="1.2" stroke-dasharray="3 3"/>
+      <circle cx="108" cy="-35" r="7" fill="url(#f4-goldBall)"/>
+      <path d="M102,-35 L114,-35" stroke="#7a5410" stroke-width="1.2"/>
+    </g>
+  </defs>
+
+  <!-- ===== Traits d'attelage ===== -->
+  <g fill="none" stroke="#4a2d16" stroke-width="3" stroke-linecap="round">
+    <path d="M444,248 C484,258 520,278 552,298"/>
+    <path d="M698,290 C735,292 770,288 805,282"/>
+    <path d="M953,272 C990,272 1025,268 1060,264"/>
+  </g>
+
+  <!-- ===== Rennes ===== -->
+  <use href="#f4-deer" transform="translate(620 310) rotate(-3)"/>
+  <use href="#f4-deer" transform="translate(875 292) rotate(-4) scale(0.98)"/>
+  <g transform="translate(1130 274) rotate(-5) scale(0.96)">
+    <use href="#f4-deer"/>
+    <!-- Rudolph -->
+    <circle cx="148" cy="-62" r="32.80" opacity="0.72" fill="url(#f4-noseGlow)"/>
+    <circle cx="148" cy="-62" r="6.5" fill="#ff2323"/>
+    <circle cx="146" cy="-64.5" r="2" fill="#ffc2c2"/>
+  </g>
+
+  <!-- ===== Traîneau et Père Noël ===== -->
+  <g transform="translate(90 230)">
+    <!-- sac de cadeaux -->
+    <path d="M10,14 C-6,-30 20,-70 66,-72 C108,-70 122,-30 108,14 Z" fill="url(#f4-sack)"/>
+    <path d="M30,-20 C34,-40 44,-56 56,-64" fill="none" stroke="#5c3a1e" stroke-width="3" opacity="0.5" filter="url(#f4-softSm)"/>
+    <path d="M52,-70 C54,-88 80,-90 82,-70" fill="url(#f4-sack)" stroke="#5c3a1e" stroke-width="1.5"/>
+    <path d="M48,-68 C60,-62 74,-62 86,-68" fill="none" stroke="#8c1b24" stroke-width="6" stroke-linecap="round"/>
+    <!-- cadeaux qui dépassent du sac -->
+    <g transform="rotate(-12 43 -81)">
+      <rect x="28" y="-96" width="30" height="30" fill="#1f7a4d"/>
+      <rect x="40" y="-96" width="6" height="30" fill="#e8b830"/>
+      <rect x="28" y="-84" width="30" height="6" fill="#e8b830"/>
+    </g>
+    <g transform="rotate(10 87 -98)">
+      <rect x="74" y="-110" width="26" height="26" fill="#2a5db0"/>
+      <rect x="84" y="-110" width="6" height="26" fill="#ffffff"/>
+      <rect x="74" y="-100" width="26" height="5" fill="#ffffff"/>
+    </g>
+
+    <!-- cadeaux à l'avant -->
+    <rect x="222" y="-6" width="34" height="26" fill="#1f7a4d"/>
+    <rect x="234" y="-6" width="6" height="26" fill="#e8b830"/>
+    <rect x="222" y="2" width="34" height="5" fill="#e8b830"/>
+    <rect x="258" y="0" width="30" height="20" fill="#2a5db0"/>
+    <rect x="269" y="0" width="6" height="20" fill="#ffffff"/>
+
+    <!-- Père Noël : manteau -->
+    <path d="M92,14 C86,-30 104,-62 140,-70 C180,-76 206,-52 208,-10 L210,14 Z" fill="url(#f4-suit)"/>
+    <path d="M118,-42 C124,-22 122,0 116,14" fill="none" stroke="#6a0d16" stroke-width="3" opacity="0.5" filter="url(#f4-softSm)"/>
+    <path d="M172,-50 C180,-30 184,-10 182,12" fill="none" stroke="#6a0d16" stroke-width="3" opacity="0.45" filter="url(#f4-softSm)"/>
+    <path d="M110,-56 C130,-70 160,-72 184,-60" fill="none" stroke="#ff8a8a" stroke-width="3" opacity="0.35" filter="url(#f4-softSm)"/>
+    <!-- fourrure du col -->
+    <ellipse cx="152" cy="-62" rx="34" ry="10" fill="url(#f4-fluff)"/>
+    <!-- ceinture -->
+    <path d="M92,-6 C130,0 180,0 209,-8" fill="none" stroke="#17120f" stroke-width="14"/>
+    <path d="M94,-11 C130,-5 180,-5 207,-13" fill="none" stroke="#4a4038" stroke-width="2" opacity="0.7"/>
+    <rect x="140" y="-18" width="22" height="18" rx="3" fill="url(#f4-goldBall)"/>
+    <rect x="146" y="-13" width="10" height="8" rx="2" fill="#17120f"/>
+
+    <!-- bras vers les rênes -->
+    <path d="M186,-50 C204,-42 222,-34 242,-28" fill="none" stroke="#a51826" stroke-width="21" stroke-linecap="round"/>
+    <path d="M186,-56 C204,-48 222,-40 240,-34" fill="none" stroke="#e84545" stroke-width="5" stroke-linecap="round" opacity="0.5" filter="url(#f4-softSm)"/>
+    <ellipse cx="240" cy="-28" rx="8" ry="12" fill="url(#f4-fluff)" transform="rotate(-18 240 -28)"/>
+    <ellipse cx="256" cy="-26" rx="10" ry="9" fill="#17120f"/>
+    <ellipse cx="253" cy="-29" rx="4" ry="2.5" fill="#5a5048" opacity="0.7"/>
+
+    <!-- tête -->
+    <circle cx="152" cy="-92" r="26" fill="url(#f4-skin)"/>
+    <circle cx="127" cy="-92" r="5" fill="#e0a07e"/>
+    <circle cx="177" cy="-92" r="5" fill="#d99777"/>
+    <!-- joues -->
+    <circle cx="138" cy="-84" r="8" fill="#e8806f" opacity="0.45" filter="url(#f4-softSm)"/>
+    <circle cx="168" cy="-84" r="8" fill="#e8806f" opacity="0.45" filter="url(#f4-softSm)"/>
+    <!-- barbe -->
+    <path d="M126,-94 C119,-60 127,-30 154,-22 C181,-30 189,-60 181,-94 C173,-78 165,-74 154,-76 C143,-74 135,-78 126,-94 Z" fill="url(#f4-beard)"/>
+    <g fill="none" stroke="#c4c4d0" stroke-width="1.4" stroke-linecap="round">
+      <path d="M134,-72 C134,-56 140,-42 150,-32"/>
+      <path d="M144,-66 C144,-52 148,-40 154,-30"/>
+      <path d="M164,-66 C164,-52 160,-40 154,-30"/>
+      <path d="M174,-72 C174,-56 168,-42 158,-32"/>
+      <path d="M128,-80 C126,-62 130,-48 138,-38"/>
+      <path d="M180,-80 C182,-62 178,-48 170,-38"/>
+    </g>
+    <!-- moustache -->
+    <path d="M154,-77 C139,-86 126,-79 122,-67 C135,-65 146,-68 154,-72 Z" fill="#ffffff" stroke="#d2d2dc" stroke-width="1"/>
+    <path d="M154,-77 C169,-86 182,-79 186,-67 C173,-65 162,-68 154,-72 Z" fill="#ffffff" stroke="#d2d2dc" stroke-width="1"/>
+    <!-- bouche -->
+    <path d="M147,-63 C151,-59 157,-59 161,-63" fill="none" stroke="#9c4a3e" stroke-width="2" stroke-linecap="round"/>
+    <!-- nez -->
+    <ellipse cx="154" cy="-86" rx="6.5" ry="5.5" fill="#e99a86"/>
+    <ellipse cx="152.5" cy="-88" rx="2.2" ry="1.4" fill="#f7c4b4" opacity="0.8"/>
+    <!-- yeux -->
+    <ellipse cx="143" cy="-97" rx="3" ry="3.4" fill="#1d2b44"/>
+    <ellipse cx="165" cy="-97" rx="3" ry="3.4" fill="#1d2b44"/>
+    <circle cx="144" cy="-98.3" r="1" fill="#ffffff"/>
+    <circle cx="166" cy="-98.3" r="1" fill="#ffffff"/>
+    <!-- sourcils -->
+    <path d="M134,-103 C139,-109 147,-108 150,-103" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+    <path d="M158,-103 C161,-108 169,-109 174,-103" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- bonnet (pointe emportée par le vent) -->
+    <path d="M180,-106 C188,-146 150,-170 112,-152 C88,-140 72,-116 62,-90 C76,-98 88,-110 102,-112 C114,-114 124,-110 124,-106 Z" fill="url(#f4-suit)"/>
+    <path d="M118,-148 C140,-162 168,-160 182,-138" fill="none" stroke="#ff9a9a" stroke-width="4" opacity="0.35" filter="url(#f4-softSm)"/>
+    <path d="M110,-124 C96,-122 82,-112 72,-98" fill="none" stroke="#6a0d16" stroke-width="3" opacity="0.4" filter="url(#f4-softSm)"/>
+    <ellipse cx="152" cy="-105" rx="35" ry="10" fill="url(#f4-fluff)"/>
+    <g fill="url(#f4-fluff)">
+      <circle cx="124" cy="-104" r="7"/><circle cx="136" cy="-98" r="7"/>
+      <circle cx="152" cy="-96" r="7.5"/><circle cx="168" cy="-98" r="7"/>
+      <circle cx="180" cy="-104" r="7"/>
+    </g>
+    <circle cx="60" cy="-86" r="12" fill="url(#f4-fluff)"/>
+
+    <!-- caisse du traîneau -->
+    <path d="M-18,-34 C-34,0 -24,50 10,78 C45,104 130,108 205,104 C285,100 335,76 354,16 C358,2 354,-6 346,-14 C336,6 320,14 300,14 L30,14 C6,14 -10,-8 -18,-34 Z" fill="url(#f4-redBody)"/>
+    <!-- reflets laqués -->
+    <path d="M6,56 C60,92 150,96 214,92" fill="none" stroke="#ff7b7b" stroke-width="6" opacity="0.28" filter="url(#f4-soft)"/>
+    <path d="M40,26 L296,26" fill="none" stroke="#ff7b7b" stroke-width="4" opacity="0.25" filter="url(#f4-softSm)"/>
+    <path d="M40,100 C120,108 250,104 330,60" fill="none" stroke="#2c0408" stroke-width="8" opacity="0.35" filter="url(#f4-soft)"/>
+    <!-- motifs dorés -->
+    <path d="M50,56 C80,36 124,36 146,56 C168,76 214,76 244,56 C262,44 282,44 300,52" fill="none" stroke="url(#f4-goldH)" stroke-width="3" stroke-linecap="round"/>
+    <g fill="url(#f4-goldBall)">
+      <circle cx="50" cy="56" r="4"/><circle cx="146" cy="56" r="4"/><circle cx="244" cy="56" r="4"/><circle cx="300" cy="52" r="3.5"/>
+    </g>
+    <!-- rebord doré -->
+    <path d="M-18,-34 C-10,-8 6,14 30,14 L300,14 C320,14 336,6 346,-14" fill="none" stroke="url(#f4-goldH)" stroke-width="8" stroke-linecap="round"/>
+    <path d="M-16,-32 C-8,-8 8,12 30,12 L300,12 C320,12 334,4 344,-14" fill="none" stroke="#fff6c0" stroke-width="1.6" stroke-linecap="round" opacity="0.7"/>
+    <circle cx="-18" cy="-37" r="6" fill="url(#f4-goldBall)"/>
+    <circle cx="346" cy="-17" r="6" fill="url(#f4-goldBall)"/>
+    <!-- patins -->
+    <g fill="none" stroke="url(#f4-goldH)" stroke-linecap="round">
+      <path d="M-50,134 L330,134 C370,134 380,112 366,92" stroke-width="9"/>
+      <path d="M-50,134 C-70,134 -70,112 -58,104" stroke-width="9"/>
+      <path d="M50,98 L44,134 M270,96 L276,134" stroke-width="7"/>
+    </g>
+    <path d="M-44,131 L328,131" fill="none" stroke="#fff6c0" stroke-width="1.6" opacity="0.7" stroke-linecap="round"/>
+  </g>
+
+  <!-- Rênes -->
+  <path d="M352,204 C480,196 640,236 726,268" fill="none" stroke="#2b1a0e" stroke-width="2.5" stroke-linecap="round"/>
+</svg><svg x="330" y="110" width="330" height="110" viewBox="0 0 1320 440">
+  <title>Le Père Noël, son traîneau et ses rennes</title>
+  <defs>
+    <!-- Dégradés -->
+    <linearGradient id="f5-fur" gradientUnits="userSpaceOnUse" x1="0" y1="-50" x2="0" y2="36">
+      <stop offset="0" stop-color="#5e3718"/>
+      <stop offset="0.45" stop-color="#8c5a2b"/>
+      <stop offset="0.8" stop-color="#b58a58"/>
+      <stop offset="1" stop-color="#e2d0b0"/>
+    </linearGradient>
+    <linearGradient id="f5-headGrad" gradientUnits="userSpaceOnUse" x1="0" y1="-108" x2="0" y2="-54">
+      <stop offset="0" stop-color="#5e3718"/>
+      <stop offset="1" stop-color="#9a6a38"/>
+    </linearGradient>
+    <linearGradient id="f5-redBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d42a38"/>
+      <stop offset="0.55" stop-color="#a51826"/>
+      <stop offset="1" stop-color="#5e0c16"/>
+    </linearGradient>
+    <linearGradient id="f5-suit" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e84545"/>
+      <stop offset="0.55" stop-color="#bd1f2b"/>
+      <stop offset="1" stop-color="#7d1019"/>
+    </linearGradient>
+    <linearGradient id="f5-goldH" gradientUnits="userSpaceOnUse" x1="0" y1="-40" x2="0" y2="140">
+      <stop offset="0" stop-color="#fff0a8"/>
+      <stop offset="0.35" stop-color="#e8b830"/>
+      <stop offset="0.7" stop-color="#c18a1c"/>
+      <stop offset="1" stop-color="#f3d36a"/>
+    </linearGradient>
+    <radialGradient id="f5-goldBall" cx="0.35" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#fff6c0"/>
+      <stop offset="0.5" stop-color="#e3ae2a"/>
+      <stop offset="1" stop-color="#8a5e10"/>
+    </radialGradient>
+    <radialGradient id="f5-skin" cx="0.4" cy="0.35" r="0.8">
+      <stop offset="0" stop-color="#ffdcc2"/>
+      <stop offset="1" stop-color="#e0a07e"/>
+    </radialGradient>
+    <linearGradient id="f5-beard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#d3d3dc"/>
+    </linearGradient>
+    <radialGradient id="f5-fluff" cx="0.4" cy="0.35" r="0.75">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#cfcfd8"/>
+    </radialGradient>
+    <linearGradient id="f5-sack" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d1a674"/>
+      <stop offset="1" stop-color="#7a5230"/>
+    </linearGradient>
+    <radialGradient id="f5-noseGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ff3030" stop-opacity="0.95"/>
+      <stop offset="0.45" stop-color="#ff3030" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#ff3030" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Filtres -->
+    <filter id="f5-soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <filter id="f5-softSm" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.4"/>
+    </filter>
+    <filter id="f5-furTex" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="4" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.12  0 0 0 0 0.06  0 0 0 0 0.02  0 0 0 0.9 -0.35" result="specks"/>
+      <feComposite in="specks" in2="SourceAlpha" operator="in" result="d"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="d"/></feMerge>
+    </filter>
+
+    <!-- Bois du renne -->
+    <g id="f5-antler" fill="none" stroke-linecap="round">
+      <g stroke="#b58c58">
+        <path d="M102,-104 C98,-130 84,-152 60,-166" stroke-width="7"/>
+        <path d="M94,-124 C102,-138 112,-146 124,-148" stroke-width="5"/>
+        <path d="M82,-146 C84,-160 80,-174 72,-184" stroke-width="5"/>
+        <path d="M70,-156 C60,-152 48,-154 40,-148" stroke-width="4.5"/>
+        <path d="M104,-108 C116,-118 126,-120 134,-116" stroke-width="5.5"/>
+      </g>
+      <g stroke="#ecd7ae" opacity="0.85">
+        <path d="M101,-106 C97,-130 83,-151 60,-165" stroke-width="2.5"/>
+        <path d="M94,-125 C102,-139 112,-147 124,-149" stroke-width="1.8"/>
+        <path d="M82,-147 C84,-161 80,-175 72,-185" stroke-width="1.8"/>
+        <path d="M103,-109 C115,-119 125,-121 133,-117" stroke-width="2"/>
+      </g>
+    </g>
+
+    <!-- Renne réaliste, tourné vers la droite -->
+    <g id="f5-deer">
+      <!-- pattes lointaines -->
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(18.38 40 20)"><path d="M40,20 L64,46" stroke="#4a2c12" stroke-width="14"/><path d="M64,46 L84,60" stroke="#4a2c12" stroke-width="8"/><path d="M84,60 L92,67" stroke="#1d1410" stroke-width="10"/></g><g transform="rotate(-18.38 -40 14)"><path d="M-40,14 L-60,44" stroke="#4a2c12" stroke-width="18"/><path d="M-60,44 L-68,74" stroke="#4a2c12" stroke-width="8"/><path d="M-68,74 L-68,84" stroke="#1d1410" stroke-width="10"/></g></g>
+
+      <!-- bois -->
+      <use href="#f5-antler" transform="translate(16 -5) scale(0.93)" opacity="0.7"/>
+      <use href="#f5-antler"/>
+
+      <!-- cou -->
+      <path d="M50,-40 C64,-62 76,-84 90,-100 L114,-82 C108,-60 102,-36 92,-12 C84,-2 70,4 58,12 Z" fill="url(#f5-fur)" filter="url(#f5-furTex)"/>
+      <!-- corps -->
+      <path d="M-72,-10 C-74,-36 -40,-46 0,-44 C36,-44 62,-40 76,-24 C84,-8 78,18 58,28 C30,38 -10,34 -40,30 C-64,26 -71,10 -72,-10 Z" fill="url(#f5-fur)" filter="url(#f5-furTex)"/>
+      <!-- crinière blanche -->
+      <path d="M88,-12 C98,-34 106,-58 112,-80 C120,-70 124,-46 116,-22 C110,-8 98,2 84,10 Z" fill="#f0e8d8" opacity="0.92" filter="url(#f5-softSm)"/>
+      <!-- volumes : lumière et ombres -->
+      <path d="M-60,-32 C-30,-44 20,-44 62,-34" fill="none" stroke="#c28c52" stroke-width="6" opacity="0.5" filter="url(#f5-soft)"/>
+      <path d="M40,-30 C52,-10 50,10 38,24" fill="none" stroke="#3d2210" stroke-width="5" opacity="0.4" filter="url(#f5-soft)"/>
+      <path d="M-50,-28 C-64,-6 -60,14 -44,28" fill="none" stroke="#3d2210" stroke-width="6" opacity="0.4" filter="url(#f5-soft)"/>
+      <!-- queue -->
+      <path d="M-70,-26 C-82,-34 -92,-30 -94,-20 C-88,-18 -78,-20 -70,-16 Z" fill="#ecdfc8"/>
+
+      <!-- oreille arrière -->
+      <path d="M92,-100 C80,-118 66,-122 58,-114 C66,-108 80,-102 92,-94 Z" fill="#5e3718"/>
+      <path d="M86,-102 C78,-112 70,-114 66,-112 C72,-108 80,-104 88,-98 Z" fill="#d49a72" opacity="0.7"/>
+      <!-- tête -->
+      <path d="M88,-98 C100,-108 120,-102 134,-86 C144,-76 150,-68 148,-60 C144,-54 134,-56 126,-60 C112,-64 98,-70 90,-80 Z" fill="url(#f5-headGrad)" filter="url(#f5-furTex)"/>
+      <ellipse cx="139" cy="-62" rx="12" ry="7" fill="#cfa97f" transform="rotate(-8 139 -62)"/>
+      <path d="M130,-58 C138,-56 146,-57 150,-60" fill="none" stroke="#2a1d18" stroke-width="1.5" stroke-linecap="round"/>
+      <circle cx="148" cy="-62" r="5.5" fill="#241914"/>
+      <circle cx="146.5" cy="-64" r="1.6" fill="#6b5a50"/>
+      <!-- oeil -->
+      <ellipse cx="107" cy="-89" rx="4.6" ry="3.6" fill="#1a110c"/>
+      <circle cx="108.5" cy="-90.4" r="1.3" fill="#ffffff"/>
+      <path d="M100,-93 C105,-97 112,-96 115,-92" fill="none" stroke="#3d2210" stroke-width="1.6" stroke-linecap="round"/>
+
+      <!-- pattes proches -->
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(-18.38 50 16)"><path d="M50,16 L88,30" stroke="#764a22" stroke-width="15"/><path d="M88,30 L120,32" stroke="#764a22" stroke-width="9"/><path d="M120,32 L132,34" stroke="#1d1410" stroke-width="10"/></g><g transform="rotate(18.38 -52 10)"><path d="M-52,10 L-82,34" stroke="#7a4c24" stroke-width="22"/><path d="M-82,34 L-114,44" stroke="#7a4c24" stroke-width="10"/><path d="M-114,44 L-125,48" stroke="#1d1410" stroke-width="11"/></g></g>
+
+      <!-- harnais -->
+      <path d="M8,-42 C14,-12 6,16 -2,34" fill="none" stroke="#7d1620" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="9" cy="-14" r="4.5" fill="url(#f5-goldBall)"/>
+      <path d="M70,-58 C84,-52 98,-46 108,-40" fill="none" stroke="#8c1b24" stroke-width="9" stroke-linecap="round"/>
+      <path d="M72,-61 C85,-55 98,-49 106,-44" fill="none" stroke="#e8c15a" stroke-width="1.2" stroke-dasharray="3 3"/>
+      <circle cx="108" cy="-35" r="7" fill="url(#f5-goldBall)"/>
+      <path d="M102,-35 L114,-35" stroke="#7a5410" stroke-width="1.2"/>
+    </g>
+  </defs>
+
+  <!-- ===== Traits d'attelage ===== -->
+  <g fill="none" stroke="#4a2d16" stroke-width="3" stroke-linecap="round">
+    <path d="M444,248 C484,258 520,278 552,298"/>
+    <path d="M698,290 C735,292 770,288 805,282"/>
+    <path d="M953,272 C990,272 1025,268 1060,264"/>
+  </g>
+
+  <!-- ===== Rennes ===== -->
+  <use href="#f5-deer" transform="translate(620 310) rotate(-3)"/>
+  <use href="#f5-deer" transform="translate(875 292) rotate(-4) scale(0.98)"/>
+  <g transform="translate(1130 274) rotate(-5) scale(0.96)">
+    <use href="#f5-deer"/>
+    <!-- Rudolph -->
+    <circle cx="148" cy="-62" r="30.25" opacity="0.55" fill="url(#f5-noseGlow)"/>
+    <circle cx="148" cy="-62" r="6.5" fill="#ff2323"/>
+    <circle cx="146" cy="-64.5" r="2" fill="#ffc2c2"/>
+  </g>
+
+  <!-- ===== Traîneau et Père Noël ===== -->
+  <g transform="translate(90 230)">
+    <!-- sac de cadeaux -->
+    <path d="M10,14 C-6,-30 20,-70 66,-72 C108,-70 122,-30 108,14 Z" fill="url(#f5-sack)"/>
+    <path d="M30,-20 C34,-40 44,-56 56,-64" fill="none" stroke="#5c3a1e" stroke-width="3" opacity="0.5" filter="url(#f5-softSm)"/>
+    <path d="M52,-70 C54,-88 80,-90 82,-70" fill="url(#f5-sack)" stroke="#5c3a1e" stroke-width="1.5"/>
+    <path d="M48,-68 C60,-62 74,-62 86,-68" fill="none" stroke="#8c1b24" stroke-width="6" stroke-linecap="round"/>
+    <!-- cadeaux qui dépassent du sac -->
+    <g transform="rotate(-12 43 -81)">
+      <rect x="28" y="-96" width="30" height="30" fill="#1f7a4d"/>
+      <rect x="40" y="-96" width="6" height="30" fill="#e8b830"/>
+      <rect x="28" y="-84" width="30" height="6" fill="#e8b830"/>
+    </g>
+    <g transform="rotate(10 87 -98)">
+      <rect x="74" y="-110" width="26" height="26" fill="#2a5db0"/>
+      <rect x="84" y="-110" width="6" height="26" fill="#ffffff"/>
+      <rect x="74" y="-100" width="26" height="5" fill="#ffffff"/>
+    </g>
+
+    <!-- cadeaux à l'avant -->
+    <rect x="222" y="-6" width="34" height="26" fill="#1f7a4d"/>
+    <rect x="234" y="-6" width="6" height="26" fill="#e8b830"/>
+    <rect x="222" y="2" width="34" height="5" fill="#e8b830"/>
+    <rect x="258" y="0" width="30" height="20" fill="#2a5db0"/>
+    <rect x="269" y="0" width="6" height="20" fill="#ffffff"/>
+
+    <!-- Père Noël : manteau -->
+    <path d="M92,14 C86,-30 104,-62 140,-70 C180,-76 206,-52 208,-10 L210,14 Z" fill="url(#f5-suit)"/>
+    <path d="M118,-42 C124,-22 122,0 116,14" fill="none" stroke="#6a0d16" stroke-width="3" opacity="0.5" filter="url(#f5-softSm)"/>
+    <path d="M172,-50 C180,-30 184,-10 182,12" fill="none" stroke="#6a0d16" stroke-width="3" opacity="0.45" filter="url(#f5-softSm)"/>
+    <path d="M110,-56 C130,-70 160,-72 184,-60" fill="none" stroke="#ff8a8a" stroke-width="3" opacity="0.35" filter="url(#f5-softSm)"/>
+    <!-- fourrure du col -->
+    <ellipse cx="152" cy="-62" rx="34" ry="10" fill="url(#f5-fluff)"/>
+    <!-- ceinture -->
+    <path d="M92,-6 C130,0 180,0 209,-8" fill="none" stroke="#17120f" stroke-width="14"/>
+    <path d="M94,-11 C130,-5 180,-5 207,-13" fill="none" stroke="#4a4038" stroke-width="2" opacity="0.7"/>
+    <rect x="140" y="-18" width="22" height="18" rx="3" fill="url(#f5-goldBall)"/>
+    <rect x="146" y="-13" width="10" height="8" rx="2" fill="#17120f"/>
+
+    <!-- bras vers les rênes -->
+    <path d="M186,-50 C204,-42 222,-34 242,-28" fill="none" stroke="#a51826" stroke-width="21" stroke-linecap="round"/>
+    <path d="M186,-56 C204,-48 222,-40 240,-34" fill="none" stroke="#e84545" stroke-width="5" stroke-linecap="round" opacity="0.5" filter="url(#f5-softSm)"/>
+    <ellipse cx="240" cy="-28" rx="8" ry="12" fill="url(#f5-fluff)" transform="rotate(-18 240 -28)"/>
+    <ellipse cx="256" cy="-26" rx="10" ry="9" fill="#17120f"/>
+    <ellipse cx="253" cy="-29" rx="4" ry="2.5" fill="#5a5048" opacity="0.7"/>
+
+    <!-- tête -->
+    <circle cx="152" cy="-92" r="26" fill="url(#f5-skin)"/>
+    <circle cx="127" cy="-92" r="5" fill="#e0a07e"/>
+    <circle cx="177" cy="-92" r="5" fill="#d99777"/>
+    <!-- joues -->
+    <circle cx="138" cy="-84" r="8" fill="#e8806f" opacity="0.45" filter="url(#f5-softSm)"/>
+    <circle cx="168" cy="-84" r="8" fill="#e8806f" opacity="0.45" filter="url(#f5-softSm)"/>
+    <!-- barbe -->
+    <path d="M126,-94 C119,-60 127,-30 154,-22 C181,-30 189,-60 181,-94 C173,-78 165,-74 154,-76 C143,-74 135,-78 126,-94 Z" fill="url(#f5-beard)"/>
+    <g fill="none" stroke="#c4c4d0" stroke-width="1.4" stroke-linecap="round">
+      <path d="M134,-72 C134,-56 140,-42 150,-32"/>
+      <path d="M144,-66 C144,-52 148,-40 154,-30"/>
+      <path d="M164,-66 C164,-52 160,-40 154,-30"/>
+      <path d="M174,-72 C174,-56 168,-42 158,-32"/>
+      <path d="M128,-80 C126,-62 130,-48 138,-38"/>
+      <path d="M180,-80 C182,-62 178,-48 170,-38"/>
+    </g>
+    <!-- moustache -->
+    <path d="M154,-77 C139,-86 126,-79 122,-67 C135,-65 146,-68 154,-72 Z" fill="#ffffff" stroke="#d2d2dc" stroke-width="1"/>
+    <path d="M154,-77 C169,-86 182,-79 186,-67 C173,-65 162,-68 154,-72 Z" fill="#ffffff" stroke="#d2d2dc" stroke-width="1"/>
+    <!-- bouche -->
+    <path d="M147,-63 C151,-59 157,-59 161,-63" fill="none" stroke="#9c4a3e" stroke-width="2" stroke-linecap="round"/>
+    <!-- nez -->
+    <ellipse cx="154" cy="-86" rx="6.5" ry="5.5" fill="#e99a86"/>
+    <ellipse cx="152.5" cy="-88" rx="2.2" ry="1.4" fill="#f7c4b4" opacity="0.8"/>
+    <!-- yeux -->
+    <ellipse cx="143" cy="-97" rx="3" ry="3.4" fill="#1d2b44"/>
+    <ellipse cx="165" cy="-97" rx="3" ry="3.4" fill="#1d2b44"/>
+    <circle cx="144" cy="-98.3" r="1" fill="#ffffff"/>
+    <circle cx="166" cy="-98.3" r="1" fill="#ffffff"/>
+    <!-- sourcils -->
+    <path d="M134,-103 C139,-109 147,-108 150,-103" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+    <path d="M158,-103 C161,-108 169,-109 174,-103" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- bonnet (pointe emportée par le vent) -->
+    <path d="M180,-106 C188,-146 150,-170 112,-152 C88,-140 72,-116 62,-90 C76,-98 88,-110 102,-112 C114,-114 124,-110 124,-106 Z" fill="url(#f5-suit)"/>
+    <path d="M118,-148 C140,-162 168,-160 182,-138" fill="none" stroke="#ff9a9a" stroke-width="4" opacity="0.35" filter="url(#f5-softSm)"/>
+    <path d="M110,-124 C96,-122 82,-112 72,-98" fill="none" stroke="#6a0d16" stroke-width="3" opacity="0.4" filter="url(#f5-softSm)"/>
+    <ellipse cx="152" cy="-105" rx="35" ry="10" fill="url(#f5-fluff)"/>
+    <g fill="url(#f5-fluff)">
+      <circle cx="124" cy="-104" r="7"/><circle cx="136" cy="-98" r="7"/>
+      <circle cx="152" cy="-96" r="7.5"/><circle cx="168" cy="-98" r="7"/>
+      <circle cx="180" cy="-104" r="7"/>
+    </g>
+    <circle cx="60" cy="-86" r="12" fill="url(#f5-fluff)"/>
+
+    <!-- caisse du traîneau -->
+    <path d="M-18,-34 C-34,0 -24,50 10,78 C45,104 130,108 205,104 C285,100 335,76 354,16 C358,2 354,-6 346,-14 C336,6 320,14 300,14 L30,14 C6,14 -10,-8 -18,-34 Z" fill="url(#f5-redBody)"/>
+    <!-- reflets laqués -->
+    <path d="M6,56 C60,92 150,96 214,92" fill="none" stroke="#ff7b7b" stroke-width="6" opacity="0.28" filter="url(#f5-soft)"/>
+    <path d="M40,26 L296,26" fill="none" stroke="#ff7b7b" stroke-width="4" opacity="0.25" filter="url(#f5-softSm)"/>
+    <path d="M40,100 C120,108 250,104 330,60" fill="none" stroke="#2c0408" stroke-width="8" opacity="0.35" filter="url(#f5-soft)"/>
+    <!-- motifs dorés -->
+    <path d="M50,56 C80,36 124,36 146,56 C168,76 214,76 244,56 C262,44 282,44 300,52" fill="none" stroke="url(#f5-goldH)" stroke-width="3" stroke-linecap="round"/>
+    <g fill="url(#f5-goldBall)">
+      <circle cx="50" cy="56" r="4"/><circle cx="146" cy="56" r="4"/><circle cx="244" cy="56" r="4"/><circle cx="300" cy="52" r="3.5"/>
+    </g>
+    <!-- rebord doré -->
+    <path d="M-18,-34 C-10,-8 6,14 30,14 L300,14 C320,14 336,6 346,-14" fill="none" stroke="url(#f5-goldH)" stroke-width="8" stroke-linecap="round"/>
+    <path d="M-16,-32 C-8,-8 8,12 30,12 L300,12 C320,12 334,4 344,-14" fill="none" stroke="#fff6c0" stroke-width="1.6" stroke-linecap="round" opacity="0.7"/>
+    <circle cx="-18" cy="-37" r="6" fill="url(#f5-goldBall)"/>
+    <circle cx="346" cy="-17" r="6" fill="url(#f5-goldBall)"/>
+    <!-- patins -->
+    <g fill="none" stroke="url(#f5-goldH)" stroke-linecap="round">
+      <path d="M-50,134 L330,134 C370,134 380,112 366,92" stroke-width="9"/>
+      <path d="M-50,134 C-70,134 -70,112 -58,104" stroke-width="9"/>
+      <path d="M50,98 L44,134 M270,96 L276,134" stroke-width="7"/>
+    </g>
+    <path d="M-44,131 L328,131" fill="none" stroke="#fff6c0" stroke-width="1.6" opacity="0.7" stroke-linecap="round"/>
+  </g>
+
+  <!-- Rênes -->
+  <path d="M352,204 C480,196 640,236 726,268" fill="none" stroke="#2b1a0e" stroke-width="2.5" stroke-linecap="round"/>
+</svg><svg x="660" y="110" width="330" height="110" viewBox="0 0 1320 440">
+  <title>Le Père Noël, son traîneau et ses rennes</title>
+  <defs>
+    <!-- Dégradés -->
+    <linearGradient id="f6-fur" gradientUnits="userSpaceOnUse" x1="0" y1="-50" x2="0" y2="36">
+      <stop offset="0" stop-color="#5e3718"/>
+      <stop offset="0.45" stop-color="#8c5a2b"/>
+      <stop offset="0.8" stop-color="#b58a58"/>
+      <stop offset="1" stop-color="#e2d0b0"/>
+    </linearGradient>
+    <linearGradient id="f6-headGrad" gradientUnits="userSpaceOnUse" x1="0" y1="-108" x2="0" y2="-54">
+      <stop offset="0" stop-color="#5e3718"/>
+      <stop offset="1" stop-color="#9a6a38"/>
+    </linearGradient>
+    <linearGradient id="f6-redBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d42a38"/>
+      <stop offset="0.55" stop-color="#a51826"/>
+      <stop offset="1" stop-color="#5e0c16"/>
+    </linearGradient>
+    <linearGradient id="f6-suit" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e84545"/>
+      <stop offset="0.55" stop-color="#bd1f2b"/>
+      <stop offset="1" stop-color="#7d1019"/>
+    </linearGradient>
+    <linearGradient id="f6-goldH" gradientUnits="userSpaceOnUse" x1="0" y1="-40" x2="0" y2="140">
+      <stop offset="0" stop-color="#fff0a8"/>
+      <stop offset="0.35" stop-color="#e8b830"/>
+      <stop offset="0.7" stop-color="#c18a1c"/>
+      <stop offset="1" stop-color="#f3d36a"/>
+    </linearGradient>
+    <radialGradient id="f6-goldBall" cx="0.35" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#fff6c0"/>
+      <stop offset="0.5" stop-color="#e3ae2a"/>
+      <stop offset="1" stop-color="#8a5e10"/>
+    </radialGradient>
+    <radialGradient id="f6-skin" cx="0.4" cy="0.35" r="0.8">
+      <stop offset="0" stop-color="#ffdcc2"/>
+      <stop offset="1" stop-color="#e0a07e"/>
+    </radialGradient>
+    <linearGradient id="f6-beard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#d3d3dc"/>
+    </linearGradient>
+    <radialGradient id="f6-fluff" cx="0.4" cy="0.35" r="0.75">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#cfcfd8"/>
+    </radialGradient>
+    <linearGradient id="f6-sack" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d1a674"/>
+      <stop offset="1" stop-color="#7a5230"/>
+    </linearGradient>
+    <radialGradient id="f6-noseGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ff3030" stop-opacity="0.95"/>
+      <stop offset="0.45" stop-color="#ff3030" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#ff3030" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Filtres -->
+    <filter id="f6-soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <filter id="f6-softSm" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.4"/>
+    </filter>
+    <filter id="f6-furTex" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="4" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.12  0 0 0 0 0.06  0 0 0 0 0.02  0 0 0 0.9 -0.35" result="specks"/>
+      <feComposite in="specks" in2="SourceAlpha" operator="in" result="d"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="d"/></feMerge>
+    </filter>
+
+    <!-- Bois du renne -->
+    <g id="f6-antler" fill="none" stroke-linecap="round">
+      <g stroke="#b58c58">
+        <path d="M102,-104 C98,-130 84,-152 60,-166" stroke-width="7"/>
+        <path d="M94,-124 C102,-138 112,-146 124,-148" stroke-width="5"/>
+        <path d="M82,-146 C84,-160 80,-174 72,-184" stroke-width="5"/>
+        <path d="M70,-156 C60,-152 48,-154 40,-148" stroke-width="4.5"/>
+        <path d="M104,-108 C116,-118 126,-120 134,-116" stroke-width="5.5"/>
+      </g>
+      <g stroke="#ecd7ae" opacity="0.85">
+        <path d="M101,-106 C97,-130 83,-151 60,-165" stroke-width="2.5"/>
+        <path d="M94,-125 C102,-139 112,-147 124,-149" stroke-width="1.8"/>
+        <path d="M82,-147 C84,-161 80,-175 72,-185" stroke-width="1.8"/>
+        <path d="M103,-109 C115,-119 125,-121 133,-117" stroke-width="2"/>
+      </g>
+    </g>
+
+    <!-- Renne réaliste, tourné vers la droite -->
+    <g id="f6-deer">
+      <!-- pattes lointaines -->
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(19.00 40 20)"><path d="M40,20 L64,46" stroke="#4a2c12" stroke-width="14"/><path d="M64,46 L84,60" stroke="#4a2c12" stroke-width="8"/><path d="M84,60 L92,67" stroke="#1d1410" stroke-width="10"/></g><g transform="rotate(-19.00 -40 14)"><path d="M-40,14 L-60,44" stroke="#4a2c12" stroke-width="18"/><path d="M-60,44 L-68,74" stroke="#4a2c12" stroke-width="8"/><path d="M-68,74 L-68,84" stroke="#1d1410" stroke-width="10"/></g></g>
+
+      <!-- bois -->
+      <use href="#f6-antler" transform="translate(16 -5) scale(0.93)" opacity="0.7"/>
+      <use href="#f6-antler"/>
+
+      <!-- cou -->
+      <path d="M50,-40 C64,-62 76,-84 90,-100 L114,-82 C108,-60 102,-36 92,-12 C84,-2 70,4 58,12 Z" fill="url(#f6-fur)" filter="url(#f6-furTex)"/>
+      <!-- corps -->
+      <path d="M-72,-10 C-74,-36 -40,-46 0,-44 C36,-44 62,-40 76,-24 C84,-8 78,18 58,28 C30,38 -10,34 -40,30 C-64,26 -71,10 -72,-10 Z" fill="url(#f6-fur)" filter="url(#f6-furTex)"/>
+      <!-- crinière blanche -->
+      <path d="M88,-12 C98,-34 106,-58 112,-80 C120,-70 124,-46 116,-22 C110,-8 98,2 84,10 Z" fill="#f0e8d8" opacity="0.92" filter="url(#f6-softSm)"/>
+      <!-- volumes : lumière et ombres -->
+      <path d="M-60,-32 C-30,-44 20,-44 62,-34" fill="none" stroke="#c28c52" stroke-width="6" opacity="0.5" filter="url(#f6-soft)"/>
+      <path d="M40,-30 C52,-10 50,10 38,24" fill="none" stroke="#3d2210" stroke-width="5" opacity="0.4" filter="url(#f6-soft)"/>
+      <path d="M-50,-28 C-64,-6 -60,14 -44,28" fill="none" stroke="#3d2210" stroke-width="6" opacity="0.4" filter="url(#f6-soft)"/>
+      <!-- queue -->
+      <path d="M-70,-26 C-82,-34 -92,-30 -94,-20 C-88,-18 -78,-20 -70,-16 Z" fill="#ecdfc8"/>
+
+      <!-- oreille arrière -->
+      <path d="M92,-100 C80,-118 66,-122 58,-114 C66,-108 80,-102 92,-94 Z" fill="#5e3718"/>
+      <path d="M86,-102 C78,-112 70,-114 66,-112 C72,-108 80,-104 88,-98 Z" fill="#d49a72" opacity="0.7"/>
+      <!-- tête -->
+      <path d="M88,-98 C100,-108 120,-102 134,-86 C144,-76 150,-68 148,-60 C144,-54 134,-56 126,-60 C112,-64 98,-70 90,-80 Z" fill="url(#f6-headGrad)" filter="url(#f6-furTex)"/>
+      <ellipse cx="139" cy="-62" rx="12" ry="7" fill="#cfa97f" transform="rotate(-8 139 -62)"/>
+      <path d="M130,-58 C138,-56 146,-57 150,-60" fill="none" stroke="#2a1d18" stroke-width="1.5" stroke-linecap="round"/>
+      <circle cx="148" cy="-62" r="5.5" fill="#241914"/>
+      <circle cx="146.5" cy="-64" r="1.6" fill="#6b5a50"/>
+      <!-- oeil -->
+      <ellipse cx="107" cy="-89" rx="4.6" ry="3.6" fill="#1a110c"/>
+      <circle cx="108.5" cy="-90.4" r="1.3" fill="#ffffff"/>
+      <path d="M100,-93 C105,-97 112,-96 115,-92" fill="none" stroke="#3d2210" stroke-width="1.6" stroke-linecap="round"/>
+
+      <!-- pattes proches -->
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(-19.00 50 16)"><path d="M50,16 L88,30" stroke="#764a22" stroke-width="15"/><path d="M88,30 L120,32" stroke="#764a22" stroke-width="9"/><path d="M120,32 L132,34" stroke="#1d1410" stroke-width="10"/></g><g transform="rotate(19.00 -52 10)"><path d="M-52,10 L-82,34" stroke="#7a4c24" stroke-width="22"/><path d="M-82,34 L-114,44" stroke="#7a4c24" stroke-width="10"/><path d="M-114,44 L-125,48" stroke="#1d1410" stroke-width="11"/></g></g>
+
+      <!-- harnais -->
+      <path d="M8,-42 C14,-12 6,16 -2,34" fill="none" stroke="#7d1620" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="9" cy="-14" r="4.5" fill="url(#f6-goldBall)"/>
+      <path d="M70,-58 C84,-52 98,-46 108,-40" fill="none" stroke="#8c1b24" stroke-width="9" stroke-linecap="round"/>
+      <path d="M72,-61 C85,-55 98,-49 106,-44" fill="none" stroke="#e8c15a" stroke-width="1.2" stroke-dasharray="3 3"/>
+      <circle cx="108" cy="-35" r="7" fill="url(#f6-goldBall)"/>
+      <path d="M102,-35 L114,-35" stroke="#7a5410" stroke-width="1.2"/>
+    </g>
+  </defs>
+
+  <!-- ===== Traits d'attelage ===== -->
+  <g fill="none" stroke="#4a2d16" stroke-width="3" stroke-linecap="round">
+    <path d="M444,248 C484,258 520,278 552,298"/>
+    <path d="M698,290 C735,292 770,288 805,282"/>
+    <path d="M953,272 C990,272 1025,268 1060,264"/>
+  </g>
+
+  <!-- ===== Rennes ===== -->
+  <use href="#f6-deer" transform="translate(620 310) rotate(-3)"/>
+  <use href="#f6-deer" transform="translate(875 292) rotate(-4) scale(0.98)"/>
+  <g transform="translate(1130 274) rotate(-5) scale(0.96)">
+    <use href="#f6-deer"/>
+    <!-- Rudolph -->
+    <circle cx="148" cy="-62" r="29.20" opacity="0.48" fill="url(#f6-noseGlow)"/>
+    <circle cx="148" cy="-62" r="6.5" fill="#ff2323"/>
+    <circle cx="146" cy="-64.5" r="2" fill="#ffc2c2"/>
+  </g>
+
+  <!-- ===== Traîneau et Père Noël ===== -->
+  <g transform="translate(90 230)">
+    <!-- sac de cadeaux -->
+    <path d="M10,14 C-6,-30 20,-70 66,-72 C108,-70 122,-30 108,14 Z" fill="url(#f6-sack)"/>
+    <path d="M30,-20 C34,-40 44,-56 56,-64" fill="none" stroke="#5c3a1e" stroke-width="3" opacity="0.5" filter="url(#f6-softSm)"/>
+    <path d="M52,-70 C54,-88 80,-90 82,-70" fill="url(#f6-sack)" stroke="#5c3a1e" stroke-width="1.5"/>
+    <path d="M48,-68 C60,-62 74,-62 86,-68" fill="none" stroke="#8c1b24" stroke-width="6" stroke-linecap="round"/>
+    <!-- cadeaux qui dépassent du sac -->
+    <g transform="rotate(-12 43 -81)">
+      <rect x="28" y="-96" width="30" height="30" fill="#1f7a4d"/>
+      <rect x="40" y="-96" width="6" height="30" fill="#e8b830"/>
+      <rect x="28" y="-84" width="30" height="6" fill="#e8b830"/>
+    </g>
+    <g transform="rotate(10 87 -98)">
+      <rect x="74" y="-110" width="26" height="26" fill="#2a5db0"/>
+      <rect x="84" y="-110" width="6" height="26" fill="#ffffff"/>
+      <rect x="74" y="-100" width="26" height="5" fill="#ffffff"/>
+    </g>
+
+    <!-- cadeaux à l'avant -->
+    <rect x="222" y="-6" width="34" height="26" fill="#1f7a4d"/>
+    <rect x="234" y="-6" width="6" height="26" fill="#e8b830"/>
+    <rect x="222" y="2" width="34" height="5" fill="#e8b830"/>
+    <rect x="258" y="0" width="30" height="20" fill="#2a5db0"/>
+    <rect x="269" y="0" width="6" height="20" fill="#ffffff"/>
+
+    <!-- Père Noël : manteau -->
+    <path d="M92,14 C86,-30 104,-62 140,-70 C180,-76 206,-52 208,-10 L210,14 Z" fill="url(#f6-suit)"/>
+    <path d="M118,-42 C124,-22 122,0 116,14" fill="none" stroke="#6a0d16" stroke-width="3" opacity="0.5" filter="url(#f6-softSm)"/>
+    <path d="M172,-50 C180,-30 184,-10 182,12" fill="none" stroke="#6a0d16" stroke-width="3" opacity="0.45" filter="url(#f6-softSm)"/>
+    <path d="M110,-56 C130,-70 160,-72 184,-60" fill="none" stroke="#ff8a8a" stroke-width="3" opacity="0.35" filter="url(#f6-softSm)"/>
+    <!-- fourrure du col -->
+    <ellipse cx="152" cy="-62" rx="34" ry="10" fill="url(#f6-fluff)"/>
+    <!-- ceinture -->
+    <path d="M92,-6 C130,0 180,0 209,-8" fill="none" stroke="#17120f" stroke-width="14"/>
+    <path d="M94,-11 C130,-5 180,-5 207,-13" fill="none" stroke="#4a4038" stroke-width="2" opacity="0.7"/>
+    <rect x="140" y="-18" width="22" height="18" rx="3" fill="url(#f6-goldBall)"/>
+    <rect x="146" y="-13" width="10" height="8" rx="2" fill="#17120f"/>
+
+    <!-- bras vers les rênes -->
+    <path d="M186,-50 C204,-42 222,-34 242,-28" fill="none" stroke="#a51826" stroke-width="21" stroke-linecap="round"/>
+    <path d="M186,-56 C204,-48 222,-40 240,-34" fill="none" stroke="#e84545" stroke-width="5" stroke-linecap="round" opacity="0.5" filter="url(#f6-softSm)"/>
+    <ellipse cx="240" cy="-28" rx="8" ry="12" fill="url(#f6-fluff)" transform="rotate(-18 240 -28)"/>
+    <ellipse cx="256" cy="-26" rx="10" ry="9" fill="#17120f"/>
+    <ellipse cx="253" cy="-29" rx="4" ry="2.5" fill="#5a5048" opacity="0.7"/>
+
+    <!-- tête -->
+    <circle cx="152" cy="-92" r="26" fill="url(#f6-skin)"/>
+    <circle cx="127" cy="-92" r="5" fill="#e0a07e"/>
+    <circle cx="177" cy="-92" r="5" fill="#d99777"/>
+    <!-- joues -->
+    <circle cx="138" cy="-84" r="8" fill="#e8806f" opacity="0.45" filter="url(#f6-softSm)"/>
+    <circle cx="168" cy="-84" r="8" fill="#e8806f" opacity="0.45" filter="url(#f6-softSm)"/>
+    <!-- barbe -->
+    <path d="M126,-94 C119,-60 127,-30 154,-22 C181,-30 189,-60 181,-94 C173,-78 165,-74 154,-76 C143,-74 135,-78 126,-94 Z" fill="url(#f6-beard)"/>
+    <g fill="none" stroke="#c4c4d0" stroke-width="1.4" stroke-linecap="round">
+      <path d="M134,-72 C134,-56 140,-42 150,-32"/>
+      <path d="M144,-66 C144,-52 148,-40 154,-30"/>
+      <path d="M164,-66 C164,-52 160,-40 154,-30"/>
+      <path d="M174,-72 C174,-56 168,-42 158,-32"/>
+      <path d="M128,-80 C126,-62 130,-48 138,-38"/>
+      <path d="M180,-80 C182,-62 178,-48 170,-38"/>
+    </g>
+    <!-- moustache -->
+    <path d="M154,-77 C139,-86 126,-79 122,-67 C135,-65 146,-68 154,-72 Z" fill="#ffffff" stroke="#d2d2dc" stroke-width="1"/>
+    <path d="M154,-77 C169,-86 182,-79 186,-67 C173,-65 162,-68 154,-72 Z" fill="#ffffff" stroke="#d2d2dc" stroke-width="1"/>
+    <!-- bouche -->
+    <path d="M147,-63 C151,-59 157,-59 161,-63" fill="none" stroke="#9c4a3e" stroke-width="2" stroke-linecap="round"/>
+    <!-- nez -->
+    <ellipse cx="154" cy="-86" rx="6.5" ry="5.5" fill="#e99a86"/>
+    <ellipse cx="152.5" cy="-88" rx="2.2" ry="1.4" fill="#f7c4b4" opacity="0.8"/>
+    <!-- yeux -->
+    <ellipse cx="143" cy="-97" rx="3" ry="3.4" fill="#1d2b44"/>
+    <ellipse cx="165" cy="-97" rx="3" ry="3.4" fill="#1d2b44"/>
+    <circle cx="144" cy="-98.3" r="1" fill="#ffffff"/>
+    <circle cx="166" cy="-98.3" r="1" fill="#ffffff"/>
+    <!-- sourcils -->
+    <path d="M134,-103 C139,-109 147,-108 150,-103" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+    <path d="M158,-103 C161,-108 169,-109 174,-103" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- bonnet (pointe emportée par le vent) -->
+    <path d="M180,-106 C188,-146 150,-170 112,-152 C88,-140 72,-116 62,-90 C76,-98 88,-110 102,-112 C114,-114 124,-110 124,-106 Z" fill="url(#f6-suit)"/>
+    <path d="M118,-148 C140,-162 168,-160 182,-138" fill="none" stroke="#ff9a9a" stroke-width="4" opacity="0.35" filter="url(#f6-softSm)"/>
+    <path d="M110,-124 C96,-122 82,-112 72,-98" fill="none" stroke="#6a0d16" stroke-width="3" opacity="0.4" filter="url(#f6-softSm)"/>
+    <ellipse cx="152" cy="-105" rx="35" ry="10" fill="url(#f6-fluff)"/>
+    <g fill="url(#f6-fluff)">
+      <circle cx="124" cy="-104" r="7"/><circle cx="136" cy="-98" r="7"/>
+      <circle cx="152" cy="-96" r="7.5"/><circle cx="168" cy="-98" r="7"/>
+      <circle cx="180" cy="-104" r="7"/>
+    </g>
+    <circle cx="60" cy="-86" r="12" fill="url(#f6-fluff)"/>
+
+    <!-- caisse du traîneau -->
+    <path d="M-18,-34 C-34,0 -24,50 10,78 C45,104 130,108 205,104 C285,100 335,76 354,16 C358,2 354,-6 346,-14 C336,6 320,14 300,14 L30,14 C6,14 -10,-8 -18,-34 Z" fill="url(#f6-redBody)"/>
+    <!-- reflets laqués -->
+    <path d="M6,56 C60,92 150,96 214,92" fill="none" stroke="#ff7b7b" stroke-width="6" opacity="0.28" filter="url(#f6-soft)"/>
+    <path d="M40,26 L296,26" fill="none" stroke="#ff7b7b" stroke-width="4" opacity="0.25" filter="url(#f6-softSm)"/>
+    <path d="M40,100 C120,108 250,104 330,60" fill="none" stroke="#2c0408" stroke-width="8" opacity="0.35" filter="url(#f6-soft)"/>
+    <!-- motifs dorés -->
+    <path d="M50,56 C80,36 124,36 146,56 C168,76 214,76 244,56 C262,44 282,44 300,52" fill="none" stroke="url(#f6-goldH)" stroke-width="3" stroke-linecap="round"/>
+    <g fill="url(#f6-goldBall)">
+      <circle cx="50" cy="56" r="4"/><circle cx="146" cy="56" r="4"/><circle cx="244" cy="56" r="4"/><circle cx="300" cy="52" r="3.5"/>
+    </g>
+    <!-- rebord doré -->
+    <path d="M-18,-34 C-10,-8 6,14 30,14 L300,14 C320,14 336,6 346,-14" fill="none" stroke="url(#f6-goldH)" stroke-width="8" stroke-linecap="round"/>
+    <path d="M-16,-32 C-8,-8 8,12 30,12 L300,12 C320,12 334,4 344,-14" fill="none" stroke="#fff6c0" stroke-width="1.6" stroke-linecap="round" opacity="0.7"/>
+    <circle cx="-18" cy="-37" r="6" fill="url(#f6-goldBall)"/>
+    <circle cx="346" cy="-17" r="6" fill="url(#f6-goldBall)"/>
+    <!-- patins -->
+    <g fill="none" stroke="url(#f6-goldH)" stroke-linecap="round">
+      <path d="M-50,134 L330,134 C370,134 380,112 366,92" stroke-width="9"/>
+      <path d="M-50,134 C-70,134 -70,112 -58,104" stroke-width="9"/>
+      <path d="M50,98 L44,134 M270,96 L276,134" stroke-width="7"/>
+    </g>
+    <path d="M-44,131 L328,131" fill="none" stroke="#fff6c0" stroke-width="1.6" opacity="0.7" stroke-linecap="round"/>
+  </g>
+
+  <!-- Rênes -->
+  <path d="M352,204 C480,196 640,236 726,268" fill="none" stroke="#2b1a0e" stroke-width="2.5" stroke-linecap="round"/>
+</svg><svg x="990" y="110" width="330" height="110" viewBox="0 0 1320 440">
+  <title>Le Père Noël, son traîneau et ses rennes</title>
+  <defs>
+    <!-- Dégradés -->
+    <linearGradient id="f7-fur" gradientUnits="userSpaceOnUse" x1="0" y1="-50" x2="0" y2="36">
+      <stop offset="0" stop-color="#5e3718"/>
+      <stop offset="0.45" stop-color="#8c5a2b"/>
+      <stop offset="0.8" stop-color="#b58a58"/>
+      <stop offset="1" stop-color="#e2d0b0"/>
+    </linearGradient>
+    <linearGradient id="f7-headGrad" gradientUnits="userSpaceOnUse" x1="0" y1="-108" x2="0" y2="-54">
+      <stop offset="0" stop-color="#5e3718"/>
+      <stop offset="1" stop-color="#9a6a38"/>
+    </linearGradient>
+    <linearGradient id="f7-redBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d42a38"/>
+      <stop offset="0.55" stop-color="#a51826"/>
+      <stop offset="1" stop-color="#5e0c16"/>
+    </linearGradient>
+    <linearGradient id="f7-suit" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e84545"/>
+      <stop offset="0.55" stop-color="#bd1f2b"/>
+      <stop offset="1" stop-color="#7d1019"/>
+    </linearGradient>
+    <linearGradient id="f7-goldH" gradientUnits="userSpaceOnUse" x1="0" y1="-40" x2="0" y2="140">
+      <stop offset="0" stop-color="#fff0a8"/>
+      <stop offset="0.35" stop-color="#e8b830"/>
+      <stop offset="0.7" stop-color="#c18a1c"/>
+      <stop offset="1" stop-color="#f3d36a"/>
+    </linearGradient>
+    <radialGradient id="f7-goldBall" cx="0.35" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#fff6c0"/>
+      <stop offset="0.5" stop-color="#e3ae2a"/>
+      <stop offset="1" stop-color="#8a5e10"/>
+    </radialGradient>
+    <radialGradient id="f7-skin" cx="0.4" cy="0.35" r="0.8">
+      <stop offset="0" stop-color="#ffdcc2"/>
+      <stop offset="1" stop-color="#e0a07e"/>
+    </radialGradient>
+    <linearGradient id="f7-beard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#d3d3dc"/>
+    </linearGradient>
+    <radialGradient id="f7-fluff" cx="0.4" cy="0.35" r="0.75">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#cfcfd8"/>
+    </radialGradient>
+    <linearGradient id="f7-sack" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d1a674"/>
+      <stop offset="1" stop-color="#7a5230"/>
+    </linearGradient>
+    <radialGradient id="f7-noseGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ff3030" stop-opacity="0.95"/>
+      <stop offset="0.45" stop-color="#ff3030" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#ff3030" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Filtres -->
+    <filter id="f7-soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <filter id="f7-softSm" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.4"/>
+    </filter>
+    <filter id="f7-furTex" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="4" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.12  0 0 0 0 0.06  0 0 0 0 0.02  0 0 0 0.9 -0.35" result="specks"/>
+      <feComposite in="specks" in2="SourceAlpha" operator="in" result="d"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="d"/></feMerge>
+    </filter>
+
+    <!-- Bois du renne -->
+    <g id="f7-antler" fill="none" stroke-linecap="round">
+      <g stroke="#b58c58">
+        <path d="M102,-104 C98,-130 84,-152 60,-166" stroke-width="7"/>
+        <path d="M94,-124 C102,-138 112,-146 124,-148" stroke-width="5"/>
+        <path d="M82,-146 C84,-160 80,-174 72,-184" stroke-width="5"/>
+        <path d="M70,-156 C60,-152 48,-154 40,-148" stroke-width="4.5"/>
+        <path d="M104,-108 C116,-118 126,-120 134,-116" stroke-width="5.5"/>
+      </g>
+      <g stroke="#ecd7ae" opacity="0.85">
+        <path d="M101,-106 C97,-130 83,-151 60,-165" stroke-width="2.5"/>
+        <path d="M94,-125 C102,-139 112,-147 124,-149" stroke-width="1.8"/>
+        <path d="M82,-147 C84,-161 80,-175 72,-185" stroke-width="1.8"/>
+        <path d="M103,-109 C115,-119 125,-121 133,-117" stroke-width="2"/>
+      </g>
+    </g>
+
+    <!-- Renne réaliste, tourné vers la droite -->
+    <g id="f7-deer">
+      <!-- pattes lointaines -->
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(8.49 40 20)"><path d="M40,20 L64,46" stroke="#4a2c12" stroke-width="14"/><path d="M64,46 L84,60" stroke="#4a2c12" stroke-width="8"/><path d="M84,60 L92,67" stroke="#1d1410" stroke-width="10"/></g><g transform="rotate(-8.49 -40 14)"><path d="M-40,14 L-60,44" stroke="#4a2c12" stroke-width="18"/><path d="M-60,44 L-68,74" stroke="#4a2c12" stroke-width="8"/><path d="M-68,74 L-68,84" stroke="#1d1410" stroke-width="10"/></g></g>
+
+      <!-- bois -->
+      <use href="#f7-antler" transform="translate(16 -5) scale(0.93)" opacity="0.7"/>
+      <use href="#f7-antler"/>
+
+      <!-- cou -->
+      <path d="M50,-40 C64,-62 76,-84 90,-100 L114,-82 C108,-60 102,-36 92,-12 C84,-2 70,4 58,12 Z" fill="url(#f7-fur)" filter="url(#f7-furTex)"/>
+      <!-- corps -->
+      <path d="M-72,-10 C-74,-36 -40,-46 0,-44 C36,-44 62,-40 76,-24 C84,-8 78,18 58,28 C30,38 -10,34 -40,30 C-64,26 -71,10 -72,-10 Z" fill="url(#f7-fur)" filter="url(#f7-furTex)"/>
+      <!-- crinière blanche -->
+      <path d="M88,-12 C98,-34 106,-58 112,-80 C120,-70 124,-46 116,-22 C110,-8 98,2 84,10 Z" fill="#f0e8d8" opacity="0.92" filter="url(#f7-softSm)"/>
+      <!-- volumes : lumière et ombres -->
+      <path d="M-60,-32 C-30,-44 20,-44 62,-34" fill="none" stroke="#c28c52" stroke-width="6" opacity="0.5" filter="url(#f7-soft)"/>
+      <path d="M40,-30 C52,-10 50,10 38,24" fill="none" stroke="#3d2210" stroke-width="5" opacity="0.4" filter="url(#f7-soft)"/>
+      <path d="M-50,-28 C-64,-6 -60,14 -44,28" fill="none" stroke="#3d2210" stroke-width="6" opacity="0.4" filter="url(#f7-soft)"/>
+      <!-- queue -->
+      <path d="M-70,-26 C-82,-34 -92,-30 -94,-20 C-88,-18 -78,-20 -70,-16 Z" fill="#ecdfc8"/>
+
+      <!-- oreille arrière -->
+      <path d="M92,-100 C80,-118 66,-122 58,-114 C66,-108 80,-102 92,-94 Z" fill="#5e3718"/>
+      <path d="M86,-102 C78,-112 70,-114 66,-112 C72,-108 80,-104 88,-98 Z" fill="#d49a72" opacity="0.7"/>
+      <!-- tête -->
+      <path d="M88,-98 C100,-108 120,-102 134,-86 C144,-76 150,-68 148,-60 C144,-54 134,-56 126,-60 C112,-64 98,-70 90,-80 Z" fill="url(#f7-headGrad)" filter="url(#f7-furTex)"/>
+      <ellipse cx="139" cy="-62" rx="12" ry="7" fill="#cfa97f" transform="rotate(-8 139 -62)"/>
+      <path d="M130,-58 C138,-56 146,-57 150,-60" fill="none" stroke="#2a1d18" stroke-width="1.5" stroke-linecap="round"/>
+      <circle cx="148" cy="-62" r="5.5" fill="#241914"/>
+      <circle cx="146.5" cy="-64" r="1.6" fill="#6b5a50"/>
+      <!-- oeil -->
+      <ellipse cx="107" cy="-89" rx="4.6" ry="3.6" fill="#1a110c"/>
+      <circle cx="108.5" cy="-90.4" r="1.3" fill="#ffffff"/>
+      <path d="M100,-93 C105,-97 112,-96 115,-92" fill="none" stroke="#3d2210" stroke-width="1.6" stroke-linecap="round"/>
+
+      <!-- pattes proches -->
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(-8.49 50 16)"><path d="M50,16 L88,30" stroke="#764a22" stroke-width="15"/><path d="M88,30 L120,32" stroke="#764a22" stroke-width="9"/><path d="M120,32 L132,34" stroke="#1d1410" stroke-width="10"/></g><g transform="rotate(8.49 -52 10)"><path d="M-52,10 L-82,34" stroke="#7a4c24" stroke-width="22"/><path d="M-82,34 L-114,44" stroke="#7a4c24" stroke-width="10"/><path d="M-114,44 L-125,48" stroke="#1d1410" stroke-width="11"/></g></g>
+
+      <!-- harnais -->
+      <path d="M8,-42 C14,-12 6,16 -2,34" fill="none" stroke="#7d1620" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="9" cy="-14" r="4.5" fill="url(#f7-goldBall)"/>
+      <path d="M70,-58 C84,-52 98,-46 108,-40" fill="none" stroke="#8c1b24" stroke-width="9" stroke-linecap="round"/>
+      <path d="M72,-61 C85,-55 98,-49 106,-44" fill="none" stroke="#e8c15a" stroke-width="1.2" stroke-dasharray="3 3"/>
+      <circle cx="108" cy="-35" r="7" fill="url(#f7-goldBall)"/>
+      <path d="M102,-35 L114,-35" stroke="#7a5410" stroke-width="1.2"/>
+    </g>
+  </defs>
+
+  <!-- ===== Traits d'attelage ===== -->
+  <g fill="none" stroke="#4a2d16" stroke-width="3" stroke-linecap="round">
+    <path d="M444,248 C484,258 520,278 552,298"/>
+    <path d="M698,290 C735,292 770,288 805,282"/>
+    <path d="M953,272 C990,272 1025,268 1060,264"/>
+  </g>
+
+  <!-- ===== Rennes ===== -->
+  <use href="#f7-deer" transform="translate(620 310) rotate(-3)"/>
+  <use href="#f7-deer" transform="translate(875 292) rotate(-4) scale(0.98)"/>
+  <g transform="translate(1130 274) rotate(-5) scale(0.96)">
+    <use href="#f7-deer"/>
+    <!-- Rudolph -->
+    <circle cx="148" cy="-62" r="30.25" opacity="0.55" fill="url(#f7-noseGlow)"/>
+    <circle cx="148" cy="-62" r="6.5" fill="#ff2323"/>
+    <circle cx="146" cy="-64.5" r="2" fill="#ffc2c2"/>
+  </g>
+
+  <!-- ===== Traîneau et Père Noël ===== -->
+  <g transform="translate(90 230)">
+    <!-- sac de cadeaux -->
+    <path d="M10,14 C-6,-30 20,-70 66,-72 C108,-70 122,-30 108,14 Z" fill="url(#f7-sack)"/>
+    <path d="M30,-20 C34,-40 44,-56 56,-64" fill="none" stroke="#5c3a1e" stroke-width="3" opacity="0.5" filter="url(#f7-softSm)"/>
+    <path d="M52,-70 C54,-88 80,-90 82,-70" fill="url(#f7-sack)" stroke="#5c3a1e" stroke-width="1.5"/>
+    <path d="M48,-68 C60,-62 74,-62 86,-68" fill="none" stroke="#8c1b24" stroke-width="6" stroke-linecap="round"/>
+    <!-- cadeaux qui dépassent du sac -->
+    <g transform="rotate(-12 43 -81)">
+      <rect x="28" y="-96" width="30" height="30" fill="#1f7a4d"/>
+      <rect x="40" y="-96" width="6" height="30" fill="#e8b830"/>
+      <rect x="28" y="-84" width="30" height="6" fill="#e8b830"/>
+    </g>
+    <g transform="rotate(10 87 -98)">
+      <rect x="74" y="-110" width="26" height="26" fill="#2a5db0"/>
+      <rect x="84" y="-110" width="6" height="26" fill="#ffffff"/>
+      <rect x="74" y="-100" width="26" height="5" fill="#ffffff"/>
+    </g>
+
+    <!-- cadeaux à l'avant -->
+    <rect x="222" y="-6" width="34" height="26" fill="#1f7a4d"/>
+    <rect x="234" y="-6" width="6" height="26" fill="#e8b830"/>
+    <rect x="222" y="2" width="34" height="5" fill="#e8b830"/>
+    <rect x="258" y="0" width="30" height="20" fill="#2a5db0"/>
+    <rect x="269" y="0" width="6" height="20" fill="#ffffff"/>
+
+    <!-- Père Noël : manteau -->
+    <path d="M92,14 C86,-30 104,-62 140,-70 C180,-76 206,-52 208,-10 L210,14 Z" fill="url(#f7-suit)"/>
+    <path d="M118,-42 C124,-22 122,0 116,14" fill="none" stroke="#6a0d16" stroke-width="3" opacity="0.5" filter="url(#f7-softSm)"/>
+    <path d="M172,-50 C180,-30 184,-10 182,12" fill="none" stroke="#6a0d16" stroke-width="3" opacity="0.45" filter="url(#f7-softSm)"/>
+    <path d="M110,-56 C130,-70 160,-72 184,-60" fill="none" stroke="#ff8a8a" stroke-width="3" opacity="0.35" filter="url(#f7-softSm)"/>
+    <!-- fourrure du col -->
+    <ellipse cx="152" cy="-62" rx="34" ry="10" fill="url(#f7-fluff)"/>
+    <!-- ceinture -->
+    <path d="M92,-6 C130,0 180,0 209,-8" fill="none" stroke="#17120f" stroke-width="14"/>
+    <path d="M94,-11 C130,-5 180,-5 207,-13" fill="none" stroke="#4a4038" stroke-width="2" opacity="0.7"/>
+    <rect x="140" y="-18" width="22" height="18" rx="3" fill="url(#f7-goldBall)"/>
+    <rect x="146" y="-13" width="10" height="8" rx="2" fill="#17120f"/>
+
+    <!-- bras vers les rênes -->
+    <path d="M186,-50 C204,-42 222,-34 242,-28" fill="none" stroke="#a51826" stroke-width="21" stroke-linecap="round"/>
+    <path d="M186,-56 C204,-48 222,-40 240,-34" fill="none" stroke="#e84545" stroke-width="5" stroke-linecap="round" opacity="0.5" filter="url(#f7-softSm)"/>
+    <ellipse cx="240" cy="-28" rx="8" ry="12" fill="url(#f7-fluff)" transform="rotate(-18 240 -28)"/>
+    <ellipse cx="256" cy="-26" rx="10" ry="9" fill="#17120f"/>
+    <ellipse cx="253" cy="-29" rx="4" ry="2.5" fill="#5a5048" opacity="0.7"/>
+
+    <!-- tête -->
+    <circle cx="152" cy="-92" r="26" fill="url(#f7-skin)"/>
+    <circle cx="127" cy="-92" r="5" fill="#e0a07e"/>
+    <circle cx="177" cy="-92" r="5" fill="#d99777"/>
+    <!-- joues -->
+    <circle cx="138" cy="-84" r="8" fill="#e8806f" opacity="0.45" filter="url(#f7-softSm)"/>
+    <circle cx="168" cy="-84" r="8" fill="#e8806f" opacity="0.45" filter="url(#f7-softSm)"/>
+    <!-- barbe -->
+    <path d="M126,-94 C119,-60 127,-30 154,-22 C181,-30 189,-60 181,-94 C173,-78 165,-74 154,-76 C143,-74 135,-78 126,-94 Z" fill="url(#f7-beard)"/>
+    <g fill="none" stroke="#c4c4d0" stroke-width="1.4" stroke-linecap="round">
+      <path d="M134,-72 C134,-56 140,-42 150,-32"/>
+      <path d="M144,-66 C144,-52 148,-40 154,-30"/>
+      <path d="M164,-66 C164,-52 160,-40 154,-30"/>
+      <path d="M174,-72 C174,-56 168,-42 158,-32"/>
+      <path d="M128,-80 C126,-62 130,-48 138,-38"/>
+      <path d="M180,-80 C182,-62 178,-48 170,-38"/>
+    </g>
+    <!-- moustache -->
+    <path d="M154,-77 C139,-86 126,-79 122,-67 C135,-65 146,-68 154,-72 Z" fill="#ffffff" stroke="#d2d2dc" stroke-width="1"/>
+    <path d="M154,-77 C169,-86 182,-79 186,-67 C173,-65 162,-68 154,-72 Z" fill="#ffffff" stroke="#d2d2dc" stroke-width="1"/>
+    <!-- bouche -->
+    <path d="M147,-63 C151,-59 157,-59 161,-63" fill="none" stroke="#9c4a3e" stroke-width="2" stroke-linecap="round"/>
+    <!-- nez -->
+    <ellipse cx="154" cy="-86" rx="6.5" ry="5.5" fill="#e99a86"/>
+    <ellipse cx="152.5" cy="-88" rx="2.2" ry="1.4" fill="#f7c4b4" opacity="0.8"/>
+    <!-- yeux -->
+    <ellipse cx="143" cy="-97" rx="3" ry="3.4" fill="#1d2b44"/>
+    <ellipse cx="165" cy="-97" rx="3" ry="3.4" fill="#1d2b44"/>
+    <circle cx="144" cy="-98.3" r="1" fill="#ffffff"/>
+    <circle cx="166" cy="-98.3" r="1" fill="#ffffff"/>
+    <!-- sourcils -->
+    <path d="M134,-103 C139,-109 147,-108 150,-103" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+    <path d="M158,-103 C161,-108 169,-109 174,-103" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- bonnet (pointe emportée par le vent) -->
+    <path d="M180,-106 C188,-146 150,-170 112,-152 C88,-140 72,-116 62,-90 C76,-98 88,-110 102,-112 C114,-114 124,-110 124,-106 Z" fill="url(#f7-suit)"/>
+    <path d="M118,-148 C140,-162 168,-160 182,-138" fill="none" stroke="#ff9a9a" stroke-width="4" opacity="0.35" filter="url(#f7-softSm)"/>
+    <path d="M110,-124 C96,-122 82,-112 72,-98" fill="none" stroke="#6a0d16" stroke-width="3" opacity="0.4" filter="url(#f7-softSm)"/>
+    <ellipse cx="152" cy="-105" rx="35" ry="10" fill="url(#f7-fluff)"/>
+    <g fill="url(#f7-fluff)">
+      <circle cx="124" cy="-104" r="7"/><circle cx="136" cy="-98" r="7"/>
+      <circle cx="152" cy="-96" r="7.5"/><circle cx="168" cy="-98" r="7"/>
+      <circle cx="180" cy="-104" r="7"/>
+    </g>
+    <circle cx="60" cy="-86" r="12" fill="url(#f7-fluff)"/>
+
+    <!-- caisse du traîneau -->
+    <path d="M-18,-34 C-34,0 -24,50 10,78 C45,104 130,108 205,104 C285,100 335,76 354,16 C358,2 354,-6 346,-14 C336,6 320,14 300,14 L30,14 C6,14 -10,-8 -18,-34 Z" fill="url(#f7-redBody)"/>
+    <!-- reflets laqués -->
+    <path d="M6,56 C60,92 150,96 214,92" fill="none" stroke="#ff7b7b" stroke-width="6" opacity="0.28" filter="url(#f7-soft)"/>
+    <path d="M40,26 L296,26" fill="none" stroke="#ff7b7b" stroke-width="4" opacity="0.25" filter="url(#f7-softSm)"/>
+    <path d="M40,100 C120,108 250,104 330,60" fill="none" stroke="#2c0408" stroke-width="8" opacity="0.35" filter="url(#f7-soft)"/>
+    <!-- motifs dorés -->
+    <path d="M50,56 C80,36 124,36 146,56 C168,76 214,76 244,56 C262,44 282,44 300,52" fill="none" stroke="url(#f7-goldH)" stroke-width="3" stroke-linecap="round"/>
+    <g fill="url(#f7-goldBall)">
+      <circle cx="50" cy="56" r="4"/><circle cx="146" cy="56" r="4"/><circle cx="244" cy="56" r="4"/><circle cx="300" cy="52" r="3.5"/>
+    </g>
+    <!-- rebord doré -->
+    <path d="M-18,-34 C-10,-8 6,14 30,14 L300,14 C320,14 336,6 346,-14" fill="none" stroke="url(#f7-goldH)" stroke-width="8" stroke-linecap="round"/>
+    <path d="M-16,-32 C-8,-8 8,12 30,12 L300,12 C320,12 334,4 344,-14" fill="none" stroke="#fff6c0" stroke-width="1.6" stroke-linecap="round" opacity="0.7"/>
+    <circle cx="-18" cy="-37" r="6" fill="url(#f7-goldBall)"/>
+    <circle cx="346" cy="-17" r="6" fill="url(#f7-goldBall)"/>
+    <!-- patins -->
+    <g fill="none" stroke="url(#f7-goldH)" stroke-linecap="round">
+      <path d="M-50,134 L330,134 C370,134 380,112 366,92" stroke-width="9"/>
+      <path d="M-50,134 C-70,134 -70,112 -58,104" stroke-width="9"/>
+      <path d="M50,98 L44,134 M270,96 L276,134" stroke-width="7"/>
+    </g>
+    <path d="M-44,131 L328,131" fill="none" stroke="#fff6c0" stroke-width="1.6" opacity="0.7" stroke-linecap="round"/>
+  </g>
+
+  <!-- Rênes -->
+  <path d="M352,204 C480,196 640,236 726,268" fill="none" stroke="#2b1a0e" stroke-width="2.5" stroke-linecap="round"/>
+</svg></svg>

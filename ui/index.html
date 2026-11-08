@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'">
+  <title>Wintermas · Christmas</title>
+  <link rel="stylesheet" href="panel.css">
+</head>
+<body>
+  <div class="widget">
+    <header>
+      <span class="indicator" aria-hidden="true"></span>
+      <button id="toggle" aria-label="Open Christmas menu" aria-expanded="false" aria-controls="menu">
+        <img src="icon.png" alt="" draggable="false">
+      </button>
+      <div class="handle" title="Drag here to move the widget"><svg viewBox="0 0 12 16" width="12" height="16" aria-hidden="true" fill="currentColor"><circle cx="3.5" cy="4" r="1.2"/><circle cx="8.5" cy="4" r="1.2"/><circle cx="3.5" cy="8" r="1.2"/><circle cx="8.5" cy="8" r="1.2"/><circle cx="3.5" cy="12" r="1.2"/><circle cx="8.5" cy="12" r="1.2"/></svg></div>
+      <div class="title"><h1>Wintermas</h1><small>A little winter for your desktop</small></div>
+    </header>
+    <main id="menu" hidden>
+      <label class="switch master"><span>Christmas mode<small>Bring the desktop to life</small></span><input id="enabled" type="checkbox"></label>
+      <fieldset id="options" disabled>
+        <section class="controls" aria-label="Snow settings">
+          <label class="switch"><span>Snowfall</span><input id="snow" type="checkbox"></label>
+          <label class="slider"><span>Intensity <output id="intensity-value"></output></span><input id="intensity" type="range" min="0" max="100"></label>
+          <label class="slider"><span>Wind <output id="wind-value"></output></span><input id="wind" type="range" min="-100" max="100"></label>
+          <label class="switch secondary"><span>Snow on the taskbar</span><input id="taskbar" type="checkbox"></label>
+        </section>
+        <section class="group" aria-label="Christmas animations">
+          <h2>Snow day</h2>
+          <div class="actions">
+            <button data-action="clear"><svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 5.5h8.5L14 9v3H2z"/><circle cx="5" cy="12.5" r="1.3"/><circle cx="11" cy="12.5" r="1.3"/></svg>Snowplow</button>
+            <button data-action="santa"><svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5l1.6 4.9 4.9 1.6-4.9 1.6L8 14.5l-1.6-4.9L1.5 8l4.9-1.6z"/></svg>Send Santa</button>
+            <button data-action="snowball"><svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.8"/><path d="M5 6.2a3.6 3.6 0 0 1 2-1.7"/></svg>Make snowball</button>
+            <button data-action="reset"><svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.2 8A5.2 5.2 0 1 1 11.6 4.3M13.2 2.4v3h-3"/></svg>Reset snow</button>
+          </div>
+        </section>
+        <section class="group decor" aria-label="Christmas decorations">
+          <h2>Decorations</h2>
+          <div class="palette">
+            <label for="lights">Lights</label>
+            <div class="select"><i class="swatch" data-palette="classic" aria-hidden="true"></i>
+              <select id="lights"><option value="classic">Classic colors</option><option value="warm">Warm white</option><option value="ice">Ice blue</option><option value="holly">Red and green</option></select></div>
+            <input id="light-color" type="color" value="#ffb85c" aria-label="Custom light color" title="Choose a custom light color">
+          </div>
+          <div class="actions">
+            <button data-action="garland"><svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M1.5 3.5c2.5 7 10.500 7 13 0"/><circle cx="4.800" cy="8.600" r="1.100"/><circle cx="8" cy="10" r="1.100"/><circle cx="11.200" cy="8.600" r="1.100"/></svg>Hang garland</button>
+            <button data-action="tree"><svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.500l3.200 4.300H9.400l2.800 3.700H3.800l2.800-3.700H4.800zM8 9.500v4"/></svg>Place tree</button>
+            <button data-action="decor-reset"><svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg>Clear decorations</button>
+          </div>
+        </section>
+        <p class="hint">Click and drag across a snowbank to roll a snowball.</p>
+      </fieldset>
+      <button id="hide-widget" type="button"><svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.500 6l4.500 4.500L12.500 6"/></svg>Hide to system tray</button>
+      <p id="message" role="status"></p>
+    </main>
+  </div>
+  <script type="module" src="panel.js"></script>
+</body>
+</html>

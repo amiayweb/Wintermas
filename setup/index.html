@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src data:; style-src 'unsafe-inline'; script-src 'unsafe-inline'">
+<title>Wintermas Setup</title>
+<style>
+:root{color-scheme:dark;font:14px/1.45 "Segoe UI Variable Text","Segoe UI",sans-serif;color:#edf8ed;background:#0b1913;
+--muted:#a9c8b8;--mint:#c9f2d6;--gold:#f5cf89;--line:#c9f2d62c;--ease:cubic-bezier(.2,.7,.2,1);--spring:cubic-bezier(.34,1.56,.64,1)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;height:100vh;overflow:hidden;border:1px solid var(--line);position:relative;
+background:linear-gradient(160deg,#12291f 0%,#0b1913 70%)}
+button,input{font:inherit}
+button{cursor:pointer;color:inherit}
+button:focus-visible,input:focus-visible{outline:2px solid var(--mint);outline-offset:3px}
+button:disabled,input:disabled{opacity:.45;cursor:default}
+#snow{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:3}
+
+/* Header */
+header{position:relative;z-index:2;height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 18px 0 22px;user-select:none;border-bottom:1px solid var(--line);background:#ffffff05;backdrop-filter:blur(8px)}
+.brand{font-size:11px;letter-spacing:.18em;font-weight:700;color:#d3ecda;display:flex;align-items:center}
+.brand span{color:var(--gold);margin-right:8px;display:inline-block;animation:twinkle 3.6s ease-in-out infinite}
+.close{width:32px;height:32px;padding:0;border:0;border-radius:9px;background:transparent;color:var(--muted);font-size:20px;line-height:1;transition:background .25s,color .25s,transform .25s var(--spring)}
+.close:hover:not(:disabled){background:#ff6b6b30;color:#fff;transform:rotate(90deg)}
+.close:active:not(:disabled){transform:rotate(90deg) scale(.9)}
+
+main{position:relative;z-index:2;height:calc(100% - 52px);display:grid;grid-template-columns:270px 1fr}
+
+/* Art column */
+.art{position:relative;overflow:hidden;display:grid;place-items:center;border-right:1px solid var(--line)}
+.aurora{position:absolute;inset:0;overflow:hidden}
+.aurora i{position:absolute;width:320px;height:320px;border-radius:50%;will-change:transform;opacity:.55}
+.aurora i:nth-child(1){left:-110px;top:-60px;background:radial-gradient(circle,#3fae83 0,transparent 65%);animation:blob1 14s ease-in-out infinite alternate}
+.aurora i:nth-child(2){right:-150px;bottom:-90px;background:radial-gradient(circle,#4b8fb8 0,transparent 65%);opacity:.38;animation:blob2 17s ease-in-out infinite alternate}
+.aurora i:nth-child(3){left:20px;bottom:-140px;background:radial-gradient(circle,#e7b66b 0,transparent 65%);opacity:.18;animation:blob1 21s ease-in-out infinite alternate-reverse}
+.stage{position:relative;width:200px;height:200px;display:grid;place-items:center;animation:rise .9s var(--ease) both}
+.orbit{position:absolute;inset:0;border:1px solid #d4f8df30;border-radius:50%;box-shadow:0 0 60px #77d2a52a,inset 0 0 30px #77d2a51a;animation:spin 28s linear infinite;will-change:transform}
+.orbit::before{content:"";position:absolute;top:-3px;left:50%;width:6px;height:6px;margin-left:-3px;border-radius:50%;background:var(--gold);box-shadow:0 0 12px 3px #f5cf89aa}
+.orbit::after{content:"";position:absolute;inset:-26px;border:1px dashed #d4f8df18;border-radius:50%}
+.halo{position:absolute;width:150px;height:150px;border-radius:50%;background:radial-gradient(circle,#9be8bf55,transparent 70%);animation:breathe 5s ease-in-out infinite}
+.float{animation:float 7s ease-in-out infinite;z-index:1}
+.float img{display:block;width:174px;height:174px;object-fit:contain;filter:drop-shadow(0 16px 30px #050e0cb0);will-change:transform;transition:filter .6s}
+[data-state=done] .float img{filter:drop-shadow(0 16px 30px #050e0cb0) drop-shadow(0 0 22px #c9f2d6aa)}
+.art small{position:absolute;bottom:24px;color:var(--muted);letter-spacing:.23em;font-size:9px;font-weight:650;animation:fade 1.2s .5s both}
+
+/* Content */
+.content{padding:30px 30px 24px;display:flex;flex-direction:column;min-width:0}
+.content>*{animation:enter .7s var(--ease) both;animation-delay:calc(var(--i,0)*70ms + 120ms)}
+.eyebrow{margin:0;color:var(--gold);font-size:10px;font-weight:700;letter-spacing:.17em}
+h1{font-size:34px;letter-spacing:-.048em;line-height:1.05;margin:8px 0 10px;font-weight:680;background:linear-gradient(180deg,#fff 30%,#bfe6cc);-webkit-background-clip:text;background-clip:text;color:transparent}
+.description{color:var(--muted);margin:0 0 24px}
+label{display:block;font-weight:650;margin-bottom:8px}
+.path{display:flex;gap:8px}
+input{min-width:0;flex:1;padding:10px 12px;border-radius:10px;border:1px solid var(--line);color:inherit;background:#07140f99;font-size:12px;transition:border-color .25s,box-shadow .25s,background .25s}
+input:hover:not(:disabled){border-color:#c9f2d65a}
+input:focus{outline:none;border-color:var(--mint);box-shadow:0 0 0 4px #c9f2d61f;background:#07140fcc}
+
+.secondary,.primary{position:relative;overflow:hidden;border-radius:10px;padding:9px 14px;border:1px solid var(--line);font-weight:650;transition:background .25s,transform .25s var(--spring),box-shadow .3s,border-color .25s}
+.secondary{background:#ffffff0c}
+.secondary:hover:not(:disabled){background:#ffffff1c;border-color:#c9f2d655}
+.primary{color:#0f2a1c;background:linear-gradient(180deg,#dcf8e4,var(--mint));border-color:transparent;box-shadow:0 6px 18px #0a1f1555}
+.primary::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,#ffffffaa,transparent);transform:skewX(-20deg);transition:left .7s var(--ease)}
+.primary:hover:not(:disabled){transform:translateY(-2px);box-shadow:0 10px 26px #86e0ae40}
+.primary:hover:not(:disabled)::after{left:130%}
+.secondary:active:not(:disabled),.primary:active:not(:disabled){transform:scale(.96)}
+.pop{animation:pop .45s var(--spring)}
+.ripple{position:absolute;border-radius:50%;background:#ffffff55;pointer-events:none;transform:scale(0);animation:ripple .6s ease-out forwards}
+[data-state=done] .primary{animation:glow 2.4s ease-in-out infinite}
+
+/* Progress */
+.progress{margin-top:18px;height:4px;overflow:hidden;border-radius:10px;background:#ffffff12;opacity:0;transform:scaleY(.4);transition:opacity .4s,transform .4s var(--ease)}
+.progress i{display:block;width:38%;height:100%;border-radius:inherit;background:linear-gradient(90deg,#83cda1,#e2f8da,#83cda1);background-size:200% 100%;box-shadow:0 0 12px #9be8bf99;transition:width .5s var(--ease)}
+[data-state=installing] .progress,[data-state=done] .progress{opacity:1;transform:none}
+[data-state=installing] .progress i:not(.det){animation:sweep 1.5s ease-in-out infinite,shine 2s linear infinite}
+[data-state=done] .progress i{width:100%!important;animation:none}
+
+/* Status */
+#status{display:flex;gap:9px;align-items:flex-start;color:var(--muted);font-size:12px;min-height:38px;margin:10px 0;overflow-wrap:anywhere}
+#msg{transition:opacity .25s,transform .25s}
+#msg.swap{opacity:0;transform:translateY(4px)}
+.badge{flex:none;width:16px;height:16px;margin-top:1px;border-radius:50%;opacity:0;transform:scale(.4);transition:opacity .3s,transform .4s var(--spring),background .3s;display:grid;place-items:center;font-size:10px;font-weight:800;color:#0f2a1c}
+.badge::before{content:""}
+[data-state=installing] .badge{opacity:1;transform:none;background:transparent;border:2px solid #c9f2d640;border-top-color:var(--mint);animation:spin .8s linear infinite}
+[data-state=done] .badge{opacity:1;transform:none;background:var(--mint)}
+[data-state=done] .badge::before{content:"✓"}
+[data-state=error] .badge{opacity:1;transform:none;background:#ffc8b9}
+[data-state=error] .badge::before{content:"!"}
+[data-state=error] #status{color:#ffc8b9;animation:shake .45s}
+footer{display:flex;justify-content:flex-end;gap:9px;margin-top:auto}
+
+@keyframes drift{}
+@keyframes float{50%{transform:translateY(-9px)}}
+@keyframes breathe{50%{transform:scale(1.18);opacity:.65}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes twinkle{50%{opacity:.35;transform:scale(.8) rotate(25deg)}}
+@keyframes blob1{to{transform:translate(70px,50px) scale(1.15)}}
+@keyframes blob2{to{transform:translate(-60px,-40px) scale(1.2)}}
+@keyframes enter{from{opacity:0;transform:translateY(14px);filter:blur(4px)}to{opacity:1;transform:none;filter:none}}
+@keyframes rise{from{opacity:0;transform:scale(.82)}to{opacity:1;transform:none}}
+@keyframes fade{from{opacity:0}}
+@keyframes sweep{from{transform:translateX(-100%)}to{transform:translateX(270%)}}
+@keyframes shine{to{background-position:-200% 0}}
+@keyframes pop{0%{transform:scale(.92)}60%{transform:scale(1.05)}100%{transform:none}}
+@keyframes ripple{to{transform:scale(1);opacity:0}}
+@keyframes glow{50%{box-shadow:0 8px 30px #9be8bf77}}
+@keyframes shake{20%,60%{transform:translateX(-4px)}40%,80%{transform:translateX(4px)}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}#snow{display:none}}
+</style>
+</head>
+<body>
+<header id="header"><div class="brand"><span>✦</span> WINTERMAS SETUP</div><button class="close" id="close" aria-label="Close installer">×</button></header>
+<main>
+  <div class="art" id="art" aria-hidden="true">
+    <div class="aurora"><i></i><i></i><i></i></div>
+    <div class="stage" id="stage"><div class="orbit" id="orbit"></div><div class="halo"></div><div class="float"><img id="logo" alt="" src="data:image/png;base64,WINTERMAS_LOGO_BASE64"></div></div>
+    <small>MADE FOR WINTER DAYS</small>
+  </div>
+  <section class="content" aria-labelledby="title">
+    <p class="eyebrow" style="--i:0">A SNOWY DESKTOP</p>
+    <h1 id="title" style="--i:1">Welcome to Wintermas</h1>
+    <p class="description" style="--i:2">Bring snowfall and Christmas decorations to your Windows desktop.</p>
+    <div style="--i:3"><label for="folder">Installation folder</label>
+    <div class="path"><input id="folder" spellcheck="false" disabled><button class="secondary" id="browse" disabled>Browse</button></div></div>
+    <div class="progress" aria-hidden="true" style="animation:none"><i id="bar"></i></div>
+    <p id="status" role="status" aria-live="polite" style="--i:4"><span class="badge" aria-hidden="true"></span><span id="msg">Installs for your Windows account.</span></p>
+    <footer style="--i:5"><button class="secondary" id="cancel">Cancel</button><button class="primary" id="install" disabled>Install Wintermas</button></footer>
+  </section>
+</main>
+<canvas id="snow" aria-hidden="true"></canvas>
+<script>
+const get = id => document.getElementById(id);
+const send = value => chrome.webview.postMessage(value);
+const folder = get('folder'), install = get('install'), browse = get('browse'),
+      cancel = get('cancel'), closeBtn = get('close'), msg = get('msg'), bar = get('bar');
+let state = 'ready';
+
+/* ---------- State handling ---------- */
+function say(text) {
+  if (msg.textContent === text) return;
+  msg.classList.add('swap');
+  setTimeout(() => { msg.textContent = text; msg.classList.remove('swap'); }, 140);
+}
+function setState(next, value = '') {
+  const prev = state;
+  state = next;
+  document.body.dataset.state = next;
+  const busy = next === 'installing', done = next === 'done';
+  folder.disabled = browse.disabled = busy || done;
+  cancel.disabled = closeBtn.disabled = busy;
+  install.disabled = busy || (!done && !folder.value.trim());
+  const label = done ? 'Open Wintermas' : busy ? 'Installing…' : 'Install Wintermas';
+  if (install.textContent !== label) {
+    install.textContent = label;
+    install.classList.remove('pop'); void install.offsetWidth; install.classList.add('pop');
+  }
+  cancel.textContent = done ? 'Done' : 'Cancel';
+  if (busy) { bar.classList.remove('det'); bar.style.width = ''; }
+  if (done && prev !== 'done') burst();
+  say(({ installing: 'Installing Wintermas…', done: 'Wintermas is ready. You can also find it in the Start menu.', error: value })[next] || 'Installs for your Windows account.');
+}
+chrome.webview.addEventListener('message', ({ data }) => {
+  if (data.state === 'folder') {
+    folder.value = data.value;
+    setState('ready');
+  } else if (data.state === 'progress') {          // optionnel : {state:'progress', value:0..100}
+    bar.classList.add('det');
+    bar.style.width = Math.max(4, Math.min(100, +data.value || 0)) + '%';
+  } else setState(data.state, data.value);
+});
+
+/* ---------- Actions ---------- */
+get('header').addEventListener('pointerdown', e => {
+  if (e.button === 0 && !e.target.closest('button')) send('drag');
+});
+closeBtn.onclick = cancel.onclick = () => send('close');
+browse.onclick = () => send('browse:' + folder.value);
+install.onclick = () => {
+  if (state === 'done') send('open');
+  else if (folder.value.trim()) { setState('installing'); send('install:' + folder.value); }
+};
+folder.addEventListener('input', () => { if (state !== 'installing' && state !== 'done') install.disabled = !folder.value.trim(); });
+folder.addEventListener('keydown', e => { if (e.key === 'Enter' && !install.disabled) install.click(); });
+addEventListener('keydown', e => { if (e.key === 'Escape' && state !== 'installing') send('close'); });
+
+/* Ripple sur les boutons */
+document.querySelectorAll('.primary,.secondary').forEach(b => b.addEventListener('pointerdown', e => {
+  if (b.disabled) return;
+  const r = b.getBoundingClientRect(), s = Math.max(r.width, r.height) * 2;
+  const d = document.createElement('span');
+  d.className = 'ripple';
+  d.style.cssText = `width:${s}px;height:${s}px;left:${e.clientX - r.left - s / 2}px;top:${e.clientY - r.top - s / 2}px`;
+  b.append(d);
+  setTimeout(() => d.remove(), 650);
+}));
+
+/* ---------- Snow canvas + parallax ---------- */
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const cv = get('snow'), cx = cv.getContext('2d');
+const logo = get('logo'), orbit = get('orbit');
+let W, H, flakes = [], sparks = [], tx = 0, ty = 0, px = 0, py = 0, last = performance.now();
+function resize() {
+  const dpr = Math.min(devicePixelRatio || 1, 2);
+  W = innerWidth; H = innerHeight;
+  cv.width = W * dpr; cv.height = H * dpr;
+  cx.setTransform(dpr, 0, 0, dpr, 0, 0);
+}
+function makeFlake(init) {
+  const z = Math.random();
+  return { x: Math.random() * W, y: init ? Math.random() * H : -8, z, r: .7 + z * 2.2, v: 16 + z * 42, s: Math.random() * 6.28, a: .22 + z * .6 };
+}
+function burst() {
+  if (reduce) return;
+  const a = get('art').getBoundingClientRect(), ox = a.left + a.width / 2, oy = a.top + a.height / 2 + 52;
+  for (let i = 0; i < 90; i++) {
+    const ang = Math.random() * 6.28, sp = 60 + Math.random() * 240;
+    sparks.push({ x: ox, y: oy, vx: Math.cos(ang) * sp, vy: Math.sin(ang) * sp - 60, life: 1, d: .5 + Math.random() * .7, r: 1 + Math.random() * 2, c: Math.random() < .35 ? '245,207,137' : '201,242,214' });
+  }
+}
+function frame(now) {
+  const dt = Math.min((now - last) / 1000, .05); last = now;
+  px += (tx - px) * Math.min(1, dt * 4); py += (ty - py) * Math.min(1, dt * 4);
+  logo.style.transform = `translate3d(${px * 9}px,${py * 7}px,0) rotate(${px * 2.5}deg)`;
+  orbit.style.marginLeft = (-px * 6) + 'px'; orbit.style.marginTop = (-py * 5) + 'px';
+  cx.clearRect(0, 0, W, H);
+  const busy = state === 'installing', speed = busy ? 1.7 : 1;
+  for (const f of flakes) {
+    f.y += f.v * speed * dt;
+    f.x += (Math.sin(now / 1500 + f.s) * 14 + px * 26 * f.z) * dt;
+    if (f.y > H + 8) Object.assign(f, makeFlake(false));
+    if (f.x > W + 8) f.x = -8; else if (f.x < -8) f.x = W + 8;
+    cx.globalAlpha = f.a * (.75 + .25 * Math.sin(now / 700 + f.s));
+    cx.fillStyle = '#e8fdef';
+    cx.beginPath(); cx.arc(f.x, f.y, f.r, 0, 6.283); cx.fill();
+  }
+  for (let i = sparks.length - 1; i >= 0; i--) {
+    const p = sparks[i];
+    p.life -= dt / p.d;
+    if (p.life <= 0) { sparks.splice(i, 1); continue; }
+    p.vy += 260 * dt; p.vx *= .985;
+    p.x += p.vx * dt; p.y += p.vy * dt;
+    cx.globalAlpha = p.life;
+    cx.fillStyle = `rgb(${p.c})`;
+    cx.beginPath(); cx.arc(p.x, p.y, p.r * (.5 + p.life * .5), 0, 6.283); cx.fill();
+  }
+  cx.globalAlpha = 1;
+  requestAnimationFrame(frame);
+}
+if (!reduce) {
+  resize();
+  for (let i = 0; i < 120; i++) flakes.push(makeFlake(true));
+  addEventListener('resize', resize);
+  addEventListener('pointermove', e => { tx = e.clientX / innerWidth * 2 - 1; ty = e.clientY / innerHeight * 2 - 1; });
+  document.addEventListener('pointerleave', () => { tx = ty = 0; });
+  requestAnimationFrame(frame);
+}
+
+send('ready');
+</script>
+</body>
+</html>
