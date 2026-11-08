@@ -73,3 +73,13 @@ Update the version with `npm version patch --no-git-tag-version` (or choose `min
 | `native/` | Windows helper that tracks window and taskbar geometry |
 | `setup/`, `scripts/` | WebView2 installer interface and build scripts |
 | `demo/` | Desktop demo video and preview image |
+
+## License
+
+Copyright © amiayweb.
+
+Wintermas source code is available under the [PolyForm Noncommercial License 1.0.0](./LICENSE). You may use, modify, and share the software for permitted noncommercial purposes under the terms of the license. Commercial use requires separate permission from amiayweb.
+
+## Acknowledgments
+
+Wintermas was inspired by [KoiArt](https://koiart.app/), a desktop effects app for macOS.
