@@ -9,7 +9,7 @@
 <p align="center">
   <img alt="Windows x64" src="https://img.shields.io/badge/Platform-Windows%20x64-0078D4">
   <img alt="Electron" src="https://img.shields.io/badge/Built%20with-Electron-47848F?logo=electron&amp;logoColor=white">
-  <img alt="Version 0.1.0" src="https://img.shields.io/badge/Version-0.1.0-2F7858">
+  <img alt="Version 0.1.0" src="./.github/version.svg">
 </p>
 
 Wintermas brings snowfall and Christmas decorations to your existing desktop. Snow settles on window edges and can spill when you move or resize a window. The widget controls the effects and can be tucked away in the Windows system tray.
@@ -22,7 +22,7 @@ Wintermas brings snowfall and Christmas decorations to your existing desktop. Sn
 
 ## Install
 
-1. Get **Wintermas-Setup.exe** from [Releases](../../releases) when a build is available, or [build the installer](#build-and-test) locally.
+1. Get **Wintermas-Setup.exe** from [Releases](../../releases) when a build is available, or [build the installer](#build-from-source) locally.
 2. Run the installer, choose a folder and select **Open Wintermas** when it finishes.
 3. Click the widget and turn on **Christmas mode**, then **Snowfall**.
 
@@ -42,14 +42,13 @@ The installer targets Windows x64 and uses Microsoft Edge WebView2 for its inter
 
 **Shortcut.** Press **Alt + Shift + B** over a snowbank to gather snow into a ball.
 
-## Build and test
+## Build from source
 
 Build on Windows x64 with Node.js 22.12 or later, npm and the .NET Framework 4.x C# compiler. The installer build uses Windows PowerShell, `curl.exe` and `tar.exe` and downloads the pinned WebView2 SDK from NuGet. To use a local copy of that SDK, set `WINTERMAS_WEBVIEW2_SDK` to the path of its `.nupkg` file.
 
 ```powershell
 npm.cmd ci
 npm.cmd exec -- install-electron
-npm.cmd test
 npm.cmd start
 ```
 
@@ -59,7 +58,11 @@ To package the app and build its installer:
 npm.cmd run build
 ```
 
-The build writes `dist/setup/Wintermas-Setup.exe`. To publish a release, attach that installer to a GitHub Release. Keep the generated `dist` folder out of Git.
+The build writes `dist/setup/Wintermas-Setup.exe`. Keep the generated `dist` folder out of Git.
+
+## Release a new version
+
+Update the version with `npm version patch --no-git-tag-version` (or choose `minor` or `major`). Update the version shown in the local badge at `.github/version.svg` and its alt text in this README, then commit and push to `main`. GitHub Actions skips versions with an existing `vX.Y.Z` tag. For a new version, it builds the installer and publishes it in a GitHub Release with a tag pointing to the built commit.
 
 ## Project layout
 
@@ -69,6 +72,4 @@ The build writes `dist/setup/Wintermas-Setup.exe`. To publish a release, attach 
 | `ui/` | Widget interface, desktop overlay, snow effects and decoration artwork |
 | `native/` | Windows helper that tracks window and taskbar geometry |
 | `setup/`, `scripts/` | WebView2 installer interface and build scripts |
-| `test/` | Tests for snow movement, collisions and garland physics |
 | `demo/` | Desktop demo video and preview image |
-
